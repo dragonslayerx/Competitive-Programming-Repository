@@ -1,0 +1,19 @@
+struct Point{
+    int x, y;
+    Point(){
+    }
+	
+    Point(int x, int y) {
+        this->x = x;
+        this->y = y;
+    }
+
+    friend std::ostream& operator <<(ostream &o, Point &p) {
+        o << "{" << p.x << ", " << p.y << "}";
+    }
+	
+	bool operator <(const Point &p) {
+		if (this->x == p.x) return this->y < p.y;
+		return this->x < p.x;
+	}
+};

@@ -1,0 +1,6 @@
+long long int multiply(long long int val, long long int n,long long int mod){
+  long long int q=((double)val*(double)n/(double)mod);
+  long long int res=val*n-mod*q;
+  res=(res%mod+mod)%mod;
+  return res;
+}

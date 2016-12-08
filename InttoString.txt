@@ -1,0 +1,19 @@
+template <typename T>
+string toString(T x){
+    string s;
+    while (x) {
+        s.push_back(x % 10 + '0');
+        x /= 10;
+    }
+    reverse(s.begin(), s.end());
+    return s;
+}
+
+long long toValue(string &x){
+    long long sum = 0;
+    for (int i = 0; i < x.size(); i++) {
+        sum *= 10;
+        sum += (x[i]-'0');
+    }
+    return sum;
+}
