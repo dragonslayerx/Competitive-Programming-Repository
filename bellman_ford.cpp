@@ -1,3 +1,9 @@
+/**
+ * Descrption: BellmanFord (Finds the shortest path from source s to all vertices v. Detects a negative weight cycle if present.)
+ * Usage: See below O(V E)
+ * Source: https://github.com/dragonslayerx
+ */
+
 struct edges {
     int u;
     int v;

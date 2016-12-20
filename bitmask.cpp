@@ -1,3 +1,9 @@
+/**
+ * Description: Bitmask (Support set, unset and get bit operation)
+ * Usage: set O(1), unset O(1), get O(1)  
+ * Source: https://github.com/dragonslayerx 
+ */
+
 class Bitmask {
 	int mask;
 	public:

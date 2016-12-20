@@ -1,3 +1,9 @@
+/**
+ * Description: Constructs path between two nodes in a full binary tree.
+ * Usage: constructPath O(lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 vector<ll> constructPath(ll u, ll v) {
     vector<ll> pathA, pathB;
     while (u >= 1) {

@@ -1,3 +1,9 @@
+/**
+ * Description: Longest Increasing Subsequence 
+ * Usage: LIS O(N lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 int LIS(const vector<int> &a, int n){
     vector<int> lis;
     lis.push_back(a[0]);

@@ -1,3 +1,10 @@
+/**
+ * Description: Rabin-Karp Hashing
+ * Usage: findSubstring O(N)
+ * Note: Its not useful as adversary can generate cases like (T="aaaaaaaaaaa", P="aaa").
+ * Source: https://github.com/dragonslayerx 
+ */
+
 long long pow(long long a, long long b, long long MOD){
 	if (b == 0) return 1;
 	long long p = pow(a, b/2, MOD);
@@ -10,7 +17,7 @@ long long pow(long long a, long long b, long long MOD){
 }	
 	
 typedef long long int64;
-int Rabin_Karp(string T, string P, int d, int MOD){
+int findSubtring(string T, string P, int d, int MOD){
 	int n =T.size(), m = P.size();
 	int64 p = 0, t = 0;
 	int64 h = pow(d, m - 1, MOD);

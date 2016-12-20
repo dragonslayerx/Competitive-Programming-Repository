@@ -1,3 +1,10 @@
+/**
+ * Description: BIT Orderstat (Returns Kth order statistic). 
+ * Usage: update O(lg(N)), statquery O(lg^2(N))
+ * Note: Perform range compression if range is large.
+ * Source: https://github.com/dragonslayerx 
+ */
+
 const int MAX = 100005;
 typedef long long ll;
 

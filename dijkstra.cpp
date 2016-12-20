@@ -1,3 +1,9 @@
+/**
+ * Description: Dijkstra (Find shortest path from single source)
+ * Usage: dijkstra O((V + E) lg(V)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 class Dijkstra {
         static const int MAX = 100050;
         static const int INF = 1e9;
@@ -7,7 +13,7 @@ class Dijkstra {
 
         public:
 
-        void dijkstra(vector<vector<pair<int,int> > > &G, int v, int e, int s, int *dist)
+        void dijkstra(vector<vector<pair<int,int> > > &G, int v, int e, int s, int dist[])
         {
             for (int i = 0; i < v; i++) {
                 dist[i] = INF;

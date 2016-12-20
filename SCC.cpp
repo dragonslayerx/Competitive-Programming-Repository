@@ -1,3 +1,9 @@
+/**
+ * Description: Strictly Connected Component decomposition 
+ * Usage: See below. O(V+E)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>

@@ -1,3 +1,9 @@
+/**
+ * Description: Generate all palindromes
+ * Usage: generatePalindromes
+ * Source: https://github.com/dragonslayerx 
+ */
+
 void fillDigits(int begin, int end, string&s, vector<int> &palindrome){
     if (begin > end) {
         string t = s;

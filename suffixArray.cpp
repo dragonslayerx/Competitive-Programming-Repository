@@ -1,3 +1,13 @@
+/**
+ * Description: Suffix Array (Manber's Algorithm)
+ * Usage: See https://www.codechef.com/viewsolution/9631939 for detailed usage. 
+ * Source: https://github.com/dragonslayerx 
+ */
+
+const int MAX = 100005;
+const int MOD = 1000000000+7;
+const int INF = 1000000000;
+ 
 //Valid Indexes are from [0, n-1] and value are from [0, k-1]
 //Digits are numbered from LSD
 template<class T, size_t digits, size_t k>
@@ -29,45 +39,46 @@ class RadixSort
         }
     };
 };
-
+ 
 struct Pair {
     int first;
     int second;
     int index;
     Pair(){}
     Pair(int first, int second, int index): first(first), second(second), index(index) {}
-
+ 
     bool operator ==(const Pair& p)
     {
         return ((first == p.first) && (second == p.second))? true: false;
     }
 };
-
+ 
 int get(Pair p, int d)
 {
     return (d == 1)? p.second: p.first;
 }
-
- //Output Arrays
- static const int MAXSIZE = 500005;
-
- int P[20][MAXSIZE];
- int suffixArray[MAXSIZE];
- Pair orderedPair[MAXSIZE];
  
-
- class SuffixArray {
-    
+ 
+//Output Arrays
+int P[25][100100];
+int suffixArray[100100];
+Pair orderedPair[100100];
+ 
+class SuffixArray {
+    static const int MAXSIZE = 100100;
+ 
     char s[MAXSIZE];
     int n;
     int lgn;
-
+ 
+ 
     int calculateLgN(int n);
-
+ 
     public:
     SuffixArray() {
         initialize();
     }
+ 
     SuffixArray(string s)
     {
         initialize();
@@ -80,7 +91,7 @@ int get(Pair p, int d)
         setString(s);
         createSuffixArray();
     }
-
+ 
     void initialize();
     void setString(char *s);
     void setString(const string &s);
@@ -89,18 +100,18 @@ int get(Pair p, int d)
     int getLCP(int a, int b) const;
     inline int getPosition(int index) const;
 };
-
+ 
 void SuffixArray::initialize()
 {
     n = 0;
 }
-
+ 
 void SuffixArray::setString(char *inputString)
 {
     strcpy(s, inputString);
     n = strlen(s);
 }
-
+ 
 void SuffixArray::setString(const string &inputString)
 {
     int i = 0;
@@ -110,7 +121,7 @@ void SuffixArray::setString(const string &inputString)
     s[i] = '\0';
     n = i;
 }
-
+ 
 int SuffixArray::calculateLgN(int n)
 {
     int i = 0;
@@ -122,7 +133,7 @@ int SuffixArray::calculateLgN(int n)
     i--;
     return i;
 }
-
+ 
 void SuffixArray::createSuffixArray()
 {
     //Assign Rank to every Character
@@ -152,10 +163,10 @@ void SuffixArray::createSuffixArray()
             else
                 orderedPair[i] = Pair(P[k-1][i], 0, i);
         }
-
+ 
         RadixSort<Pair,2,MAXSIZE> R;
         R.sort(orderedPair, n, get);
-
+ 
         int rank = 1;
         for (int i = 0; i < n; i++) {
             if (i > 0 && !(orderedPair[i] == orderedPair[i-1])) {
@@ -165,22 +176,22 @@ void SuffixArray::createSuffixArray()
         }
         length <<= 1;
     }
-
+ 
     for (int i = 0; i < n; i++) {
         suffixArray[P[lgn][i]-1] = i;
     }
 };
-
+ 
 inline int SuffixArray::operator [](int index) const
 {
     return suffixArray[index];
 }
-
+ 
 inline int SuffixArray::getPosition(int index) const
 {
     return P[lgn][index];
 }
-
+ 
 int SuffixArray::getLCP(int a, int b) const
 {
     int lps = 0;
@@ -197,5 +208,3 @@ int SuffixArray::getLCP(int a, int b) const
     }
     return lps;
 }
-
-

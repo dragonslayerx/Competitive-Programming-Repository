@@ -1,3 +1,10 @@
+/**
+ * Description: Level Ancestor (Finds the Kth level ancestor of a node in tree using sparse table) 
+ * Usage: assign, process O(N lg(N)), query O(lg(N))
+ * Note: The tree should in form of an array P where P[i] represents parent of ith node.
+ * Source: https://github.com/dragonslayerx 
+ */
+
 class levelAncestor
 {
 	private:
@@ -5,8 +12,8 @@ class levelAncestor
 		vector<vector<size_t> > LA;
 
 	public:
-		levelAncestor()
-		{}
+		levelAncestor(){}
+
 		levelAncestor(size_t size){
 			assign(size);
 		}
@@ -18,15 +25,13 @@ class levelAncestor
 		void assign(size_t size){
 			clear();
 			tree.resize(size);
-			for(size_t i=0;i<tree.size();i++)
-				tree[i]=i;
+			for(size_t i=0;i<tree.size();i++) tree[i]=i;
 		}
 
 		template<class value> void assign(const vector<value> &T){
 			clear();
 			tree.resize(T.size());
-			for(size_t i=0;i<tree.size();i++)
-				tree[i]=T[i];
+			for(size_t i=0;i<tree.size();i++) tree[i]=T[i];
 		}
 
 		void process(){
@@ -50,9 +55,11 @@ class levelAncestor
 		size_t query(size_t node,size_t level) const{
 			int k=0;
 			int current=node;
-			for(;level;level>>=1,k++)
-				if(level&1)
+			for(;level;level>>=1,k++) {
+				if(level&1) {
 					current=LA[k][current];
+				}
+			}
 			return current;
 		}
 

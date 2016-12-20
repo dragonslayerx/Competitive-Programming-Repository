@@ -1,3 +1,9 @@
+/**
+ * Description: Segment Tree Range query Range update.  
+ * Usage: construct O(N), update O(lg(N)), query O(lg(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>

@@ -1,3 +1,10 @@
+/**
+ * Description: BigInt (Big Integer library) 
+ * Usage:  See constructors, operators like +, -, *, /, >, >=, <, <=, ==, toString
+ * Note: Remove references '&' in overloaded operators for chaining operations.
+ * Source: https://github.com/dragonslayerx
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>

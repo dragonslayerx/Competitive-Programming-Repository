@@ -1,3 +1,9 @@
+/**
+ * Description: Ternary search
+ * Usage: getMax O(lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 ll f(int mid) {
     
 }

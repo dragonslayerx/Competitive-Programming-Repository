@@ -1,3 +1,9 @@
+/**
+ * Description : Connected Components (Find the connected components in graph) 
+ * Usage: dfs O(V) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 const int MAX = 100005;
 
 bool isVisited[MAX];

@@ -1,3 +1,9 @@
+/**
+ * Description: Cycle Detection (Detects a cycle in a directed or undirected graph.) 
+ * Usage: O(V) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 enum Color {
 	gray, white, black
 };

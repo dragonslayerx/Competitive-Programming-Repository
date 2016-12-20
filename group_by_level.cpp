@@ -1,3 +1,9 @@
+/**
+ * Description: Group nodes in same level together.
+ * Usage: O(V) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 vector<int> nodes[MAX];
 int groupByLevel(int u, int l){
     nodes[l].push_back(u);

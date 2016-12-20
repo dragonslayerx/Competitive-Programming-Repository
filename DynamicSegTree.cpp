@@ -1,3 +1,9 @@
+/**
+ * Description: Dynamic segment tree (Perform associative aggregate operations on dynamic array. Support insertion, deletion of elements at any index, point updates)
+ * Usage: insert O(lg(N)), erase O(lg(N)), update O(lg(N)), query O(lg(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 template<typename Tv>
 struct node {
     Tv val, mval;

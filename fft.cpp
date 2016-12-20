@@ -1,3 +1,10 @@
+/**
+ * Description: FFT (Fast Fourier Transform for fast polynomail multiplication)
+ * Usage: multiply O(N) 
+ * Note: The code is taken from http://e-maxx.ru/algo/fft_multiply
+ * Source: https://github.com/dragonslayerx 
+ */
+
 //taken from e-maxx.ru
 typedef complex<double> base;
 

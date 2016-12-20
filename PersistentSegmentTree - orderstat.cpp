@@ -1,3 +1,9 @@
+/**
+ * Description: Persistent Segment trees (Order Statistics)
+ * Usage: See below <O(Nlg(N)), O(lg(N))> 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>

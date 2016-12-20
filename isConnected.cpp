@@ -1,3 +1,9 @@
+/**
+ * Description: BFS (Checks if graph is connected using BFS)
+ * Usgae: isConnected O(V + E) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 int isConnected(vector<vector<int> > &G, int u){
 	bool isVisited[MAX] = {false};
 	queue<int> Q;
@@ -13,9 +19,9 @@ int isConnected(vector<vector<int> > &G, int u){
 		}
 	}
 	for (int i = 0; i < G.size(); i++) {
-        if (isVisited[i] == false) {
-            return false;
-        }
+       		if (isVisited[i] == false) {
+            		return false;
+        		}
 	}
 	return true;
 }

@@ -1,3 +1,9 @@
+/**
+ * Description: Multiply two 64-bit integers and checks if there is overflow. In later case INF is returned 
+ * Usage: mul O(1)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 const long long INF = 1000000000000000005LL;
 long long mul(long long a, long long b) {
 	pair<long long, long long> s, t, result;

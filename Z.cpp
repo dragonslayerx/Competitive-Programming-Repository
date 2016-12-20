@@ -1,3 +1,9 @@
+/**
+ * Description: Z function
+ * Usage: calculateZfunc O(|S|)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

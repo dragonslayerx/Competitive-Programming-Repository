@@ -1,3 +1,9 @@
+/**
+ * Description: Calculate the no of paths of paths of length L from u to v
+ * Usage: pow O(N^3 log L)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>

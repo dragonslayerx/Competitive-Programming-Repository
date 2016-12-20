@@ -1,3 +1,10 @@
+/**
+ * Description: Dynamic Segment tree (Support for inbetween insertion and array reversal)   
+ * Usage: See below. insert O(lg(N)), reverse O(lg(N)), get O(lg(N))
+ * Note: Override augment function appropriately for supporting distinct aggregate operation.
+ * Source: https://github.com/dragonslayerx 
+ */
+
 const int MAX = 100005;
 const int MOD = 1000000000+7;
 const int INF = 1000000000;
@@ -52,8 +59,10 @@ class Treap {
                 p->rev=false;
             }
             p->size = getSize(p->l)+getSize(p->r)+1;
-            for (int i = 0; i < 15; i++) p->cnt[i] = getCnt(p->l, i)+getCnt(p->r, i);
+            // Change here for support for a different augment function
+	for (int i = 0; i < 15; i++) p->cnt[i] = getCnt(p->l, i)+getCnt(p->r, i);
             p->cnt[p->val]++;
+	//
         }
     }
 

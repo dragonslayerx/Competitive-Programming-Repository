@@ -1,3 +1,9 @@
+/**
+ * Description: Heavy Light Decomposition (Perform point updates and aggregate query over paths between two nodes in tree in case vertices are weighted)
+ * Usage: update O(lg(N)), path_query O(lg^2(N)), See below for more details. 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>
@@ -98,8 +104,7 @@ int lca(int v1, int v2)
 }
 
 //---- BIT -----
-long long _query(long long *bit, int indx)
-{
+long long _query(long long *bit, int indx){
     long long sum = 0;
     while (indx) {
         sum += bit[indx];
@@ -108,16 +113,14 @@ long long _query(long long *bit, int indx)
     return sum;
 }
 
-void update(long long *bit, int indx, long long val)
-{
+void update(long long *bit, int indx, long long val){
     while (indx < MAX) {
         bit[indx] += val;
         indx += indx & -indx;
     }
 }
 
-long long query(long long *bit, int x, int y)
-{
+long long query(long long *bit, int x, int y){
     if (x > y) swap(x, y);
     return _query(bit, y) - _query(bit, x-1);
 }
@@ -136,7 +139,7 @@ long long path_query(long long *bit, int x, int y) // y is some ancestor of x in
     return aggregate;
 }
 
-void node_update(long long *bit, int x, long long y) // pass the actual id of the nodes noth the hashed ids
+void node_update(long long *bit, int x, long long y) // pass the actual id of the nodes not the hashed ids
 {
     update(bit, node[x], y);
 }

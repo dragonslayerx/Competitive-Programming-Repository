@@ -1,3 +1,9 @@
+/**
+ * Description: Edit distance (Find the levenstein distance between two strings)
+ * Usage: solve O(NM) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #define MAX 2050
 int edist[MAX][MAX];
 

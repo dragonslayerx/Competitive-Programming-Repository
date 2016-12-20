@@ -1,15 +1,15 @@
-#include <stdio.h>
-#include <vector>
-#include <algorithm>
-using namespace std;
+/**
+ * Description: Merge sort tree 
+ * Usage: construct O(Nlg(N)), query O(lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
 
 #define MAX 30050
 
 vector<vector<int> > st;
 int a[MAX];
 
-void merge(int n, int left, int right)
-{
+void merge(int n, int left, int right) {
     int lptr = 0, rptr = 0, cptr = 0;;
     while (lptr < st[left].size() || rptr < st[right].size()) {
         if (lptr == st[left].size())
@@ -25,8 +25,7 @@ void merge(int n, int left, int right)
     }
 }
 
-void construct(int n, int ll, int rl)
-{
+void construct(int n, int ll, int rl) {
     if (ll == rl) {
         st[n].push_back(a[ll]);
         return;
@@ -37,8 +36,7 @@ void construct(int n, int ll, int rl)
     merge(n, 2*n+1, 2*n+2);
 }
 
-int query(int n, int ll, int rl, int ql, int qr, int k)
-{
+int query(int n, int ll, int rl, int ql, int qr, int k) {
     if (rl < ql || ll > qr) return 0;
     if (ll >= ql && rl <= qr) {
         int t = st[n].end() - upper_bound(st[n].begin(), st[n].end(), k);
@@ -49,8 +47,7 @@ int query(int n, int ll, int rl, int ql, int qr, int k)
     return left + right;
 }
 
-int main()
-{
+int main() {
     int n;
     scanf("%d", &n);
     for (int i = 0; i < n; i++) scanf("%d", &a[i]);

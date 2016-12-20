@@ -1,3 +1,10 @@
+/**
+ * Description: Euler Totient function  
+ * Usage: See below
+ * Note: The code is taken from http://www.geeksforgeeks.org/eulers-totient-function/
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <algorithm>

@@ -1,4 +1,9 @@
-// Sum of n/1 + n/2 + ... + n/n
+/**
+ * Description: Sum of n/1 + n/2 + n/3 + ... + n/n  
+ * Usage: See below. O(sqrt(n))
+ * Note: This method can be extended to any function that takes only O(sqrt(n)) distinct values.
+ * Source: https://github.com/dragonslayerx 
+ */
 
 long long n;
 scanf("%lld", &n);

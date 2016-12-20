@@ -1,3 +1,9 @@
+/**
+ * Max Xor queries : Find maximum xor of an integer with a set of integers
+ * Usage: insert O(lg(N)), erase O(lg(N)), maximize O(lg(N))
+ * Source: https://github.com/dragonslayerx
+ */
+
 int size=0;
 node pool[5000005];
 

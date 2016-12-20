@@ -1,3 +1,9 @@
+/**
+ * Description: Merge sort (Find inversions in an array)
+ * Usage: merge_sort O(N lg(N)). See below
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <algorithm>

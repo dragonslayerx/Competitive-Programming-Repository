@@ -1,3 +1,10 @@
+/**
+ * Description: Fermats Primality Testing
+ * Usage: fermat
+ * Note: increating the no of iterations in fermat function improves accuracy (See Carmichael numbers). Usually I keep it 50.
+ * Source: https://github.com/dragonslayerx 
+ */
+
 long long mul(long long a,long long b,long long MOD){
 	long long a_high = a/1000000000;
 	long long a_low = a%1000000000;

@@ -1,3 +1,9 @@
+/**
+ * Description: Find longest length palindromic subsequence in s[i..j]
+ * Usage: See below O(V^2) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 void process(const string &s, int last[][30]) {
         int n = s.size();
         for (int j = 0; j < 26; j++) {
@@ -18,9 +24,7 @@ void process(const string &s, int last[][30]) {
 
 int last[1005][30];
 int dp1[1005][1005]
-
 process(s, last);
-
 memset(dp1, 0, sizeof(dp1));
 for (int i = 0; i < n; i++) dp1[i][i] = 1;
 for (int i = n-1; i >= 0; i--) {

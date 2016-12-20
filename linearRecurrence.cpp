@@ -1,3 +1,10 @@
+/**
+ * Description: Matrix Exponentiation (Finds the Kth element of a linear recurrence using matrix exponentiation)
+ * Usage: solve O(N^3 lg (K))
+ * Source: https://github.com/dragonslayerx 
+ */
+
+
 const int MOD = 1000000007;
 
 template <typename T, size_t N>

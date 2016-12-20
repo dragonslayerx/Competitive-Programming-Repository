@@ -1,3 +1,9 @@
+/**
+ * Description: Karatsuba Algorithm (Fast polynomial multiplication)
+ * Usage: multiply O(N lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 using namespace std;

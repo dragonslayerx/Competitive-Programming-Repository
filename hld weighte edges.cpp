@@ -1,3 +1,9 @@
+/**
+ * Heavy Light decomposition:  Perform point updates and aggregate queries over path between two nodes in a tree in case edges are weighted
+ * Complexity: O(lg^2(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include<iostream>
 #include<iostream>
 #include<cmath>

@@ -1,3 +1,9 @@
+/**
+ * Description: Mobeius Function.
+ * Usage: initmobeius O(Nlg(N))  
+ * Source: https://github.com/dragonslayerx 
+ */
+
 vector<int> mobeius;
 vector<int> no_prime_factors;
 #define INVALID INT_MAX

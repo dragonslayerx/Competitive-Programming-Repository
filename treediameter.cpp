@@ -1,3 +1,9 @@
+/**
+ * Description: Find the diameter of the tree.
+ * Usage: getDiameter O(V + E)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 typedef vector<vector<pair<int, int> > > tree;
 void dfs(tree &g, int u, int d, bool isVisited[], int dt[]){
     isVisited[u] = 1;

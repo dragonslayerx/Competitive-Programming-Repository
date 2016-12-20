@@ -1,3 +1,9 @@
+/**
+ * Description: Sieve of Eratosthenes
+ * Usage: sieve O(Nlg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 vector<bool> isprime;
 vector<int> primes;
 void sieve(int n) {
@@ -12,11 +18,11 @@ void sieve(int n) {
 					isprime[j] = false;
 			}
 		}
-    }
+	}
 	for (int i = 2; i < n; i++) {
 		if (isprime[i]) {
 			primes.push_back(i);
 		}
-    }
+	}
 	return;
 }

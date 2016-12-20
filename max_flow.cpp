@@ -1,3 +1,8 @@
+/**
+ * Description: Edmonds Karp (Find maximum flow in a network) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 class Max_Flow {
 	#define MAX 500
 	#define INF 1000000000

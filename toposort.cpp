@@ -1,3 +1,9 @@
+/**
+ * Description: Topological sorting
+ * Usage: See below O(V + E)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 const int MAX = 10050;
 
 bool isvisited[MAX];

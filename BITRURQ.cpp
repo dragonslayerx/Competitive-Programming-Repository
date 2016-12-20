@@ -1,3 +1,9 @@
+/**
+ * Description: BIT RURQ (Support range queries and range updates of 1-D array)
+ * Usage: query O(lg(N)), update O(lg(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 // Remember to use 1 based indexing
 class BIT {
     static const int MAX = 100005;
@@ -29,7 +35,7 @@ class BitRPRQ {
     public:
     BitRPRQ() {
     	memset(B1, 0, sizeof(B1));
-		memset(B2, 0, sizeof(B2));
+	memset(B2, 0, sizeof(B2));
     }
 
     long long Rquery(int p)

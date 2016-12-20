@@ -1,3 +1,10 @@
+/**
+ * Description: Preprocessing for finding factorial and inverse factorial. Support efficient binomial coefficient, Catalan no. calculation.
+ * Complexity: initfact O(N),   
+ * Source: https://github.com/dragonslayerx 
+ */
+
+
 #define MOD 1000000007
 #define MAX 2000010
 long long fact[MAX];

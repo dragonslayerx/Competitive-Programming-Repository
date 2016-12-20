@@ -1,3 +1,9 @@
+/**
+ * Description: Kruskal Algorithm (Minimum Spanning Tree). 
+ * Usage: See below O((V + E) lg(E))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>
@@ -52,16 +58,16 @@ bool compare(const edge &a, const edge &b){
 
 #define MAX 505
 int main(){
-    ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false);
 	int v, e;
 	cin >> v >> e;
 	vector<edge> E(e);
 	for (int i = 0; i < e; i++) {
-        cin >> E[i].a;
-        cin >> E[i].b;
-        E[i].a-- , E[i].b--;
-        cin >> E[i].w;
-        E[i].index = i;
+		cin >> E[i].a;
+		cin >> E[i].b;
+		E[i].a-- , E[i].b--;
+		cin >> E[i].w;
+		E[i].index = i;
 	}
 	int u;
 	cin >> u;
@@ -73,7 +79,7 @@ int main(){
 		int w = E[i].w;
 		int a = E[i].a;
 		int b = E[i].b;
-	        if (D.find(a) != D.find(b))	{
+		if (D.find(a) != D.find(b))	{
 			cout << E[i].index + 1 << endl;
 			selected++;
 			D.merge(a, b);

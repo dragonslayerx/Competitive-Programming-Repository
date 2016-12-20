@@ -1,3 +1,9 @@
+/**
+ * Description: Trie
+ * Usage: insert O( | S | ), erase O( | S | )
+ * Source: https://github.com/dragonslayerx 
+ */
+
 struct node {
 	node *p[26];
 	int count;
@@ -24,7 +30,7 @@ class trie {
             }
             x = x->p[s[i] - 'a'];
         }
-	x->count++;
+        x->count++;
     }
 	
     void erase(char *s){
@@ -33,7 +39,7 @@ class trie {
         for (int i = 0; i < length; i++) {
             x = x->p[s[i] - 'a'];
         }
-	x->count--;
+        x->count--;
     }
 	
 };

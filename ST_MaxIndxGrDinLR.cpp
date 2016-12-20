@@ -1,3 +1,9 @@
+/**
+ * Description: Segment tree to find max index having value greater than D in range [L, R]   
+ * Usage: See below. O(lg^2(n))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 vector<ii> st[4*MAX];
 vector<int> maxUpto[4*MAX];
 

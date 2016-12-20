@@ -1,3 +1,9 @@
+/**
+ * Description: Finds Kth shortest path from s to t. 
+ * Usage : getCost O((V + E) lg(V) * k)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 int getCost(graph &G, int s, int t, int k) {
     int n = G.size();
     int dist[MAX], count[MAX];
@@ -18,9 +24,9 @@ int getCost(graph &G, int s, int t, int k) {
 		}
 		if (count[u] <= k) {
             		for (int i = 0;  i < G[u].size(); i++) {
-                		int v = G[u][i].first;
-         		        int w = G[u][i].second;
-        		        Q.push(make_pair(dist[u] + w, v));
+                			int v = G[u][i].first;
+         		       		int w = G[u][i].second;
+        		        		Q.push(make_pair(dist[u] + w, v));
             		}
 		}
 	}

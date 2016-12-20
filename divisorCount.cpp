@@ -1,3 +1,10 @@
+/**
+ * Description: No of prime and distinct prime divisors.
+ * Eg. 12 is 2*2*3. It has 3 prime factors but 2 distinct prime factors.
+ * Usage: sieve O(Nlog(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 long long noPrimeDivisors[5000100];
 long long noDistinctPrimeDivisors[5000100];
 bool isPrime[5000100];

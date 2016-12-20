@@ -1,3 +1,9 @@
+/**
+ * Description: Quick Select (Find Kth order statistics)
+ * Usage: quick_select O(N)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>

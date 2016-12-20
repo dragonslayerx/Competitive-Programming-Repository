@@ -1,3 +1,9 @@
+/**
+ * Description: Persistent Segment trees (Version Query)
+ * Usage: See below update O(lg(N)), query O(lg(N)), construct O(Nlg(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 struct Node {
     long long value;
     Node *left, *right;

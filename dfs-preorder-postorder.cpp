@@ -1,3 +1,10 @@
+/**
+ * Description: Preorder and Postorder stamps (Finds the preorder and postorder stamps for vertices of tree. Useful for checking if vertex is in subtree) 
+ * Usage: preprocess O(V) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
+
 vector<vector<int> > preorder;
 vector<vector<int> > postorder;
 

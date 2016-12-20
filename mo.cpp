@@ -1,3 +1,9 @@
+/**
+ * Description: Mo Algorithm (Support offline query processing)
+ * Usage: See below (O(N sqrt(N))) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <map>

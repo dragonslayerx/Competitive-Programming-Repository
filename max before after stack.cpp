@@ -1,3 +1,9 @@
+/**
+ * Description: Find the closest larger element before and after an index. 
+ * Usage: See below O(N)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 const int max = 100005;
 int after[max], before[max];
 stack<pair<int,int> > S, T;

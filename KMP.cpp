@@ -1,3 +1,9 @@
+/**
+ * Description: KMP algorithm (Find the longest suffix match) 
+ * Usage: KMP_matcher O(T + P). See below.
+ * Source: https://github.com/dragonslayerx 
+ */
+
 void Compute_Prefix_Function(string &P, vector<int> &prefix){
 	int m = P.length();
 	int k = 0;
@@ -38,7 +44,7 @@ int KMP_matcher(string T, string P){
 int main(){
 	cout << KMP_matcher("aabaabcabaa", "aab") << endl;
 	for (int i = 1; i <= 11; i++) {
-        cout << match[i] << " ";
+        		cout << match[i] << " ";
 	}
 	cout << endl;
 }

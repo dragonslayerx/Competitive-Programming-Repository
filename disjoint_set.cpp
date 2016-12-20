@@ -1,3 +1,9 @@
+/**
+ * Description : DisjointSet (Makes a set of sets, merge sets, set membership, no. of sets, undo last operation)
+ * Usage: find O(lg(N)), merge O(lg(N)), undo O(1), getComponents O(1)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 class DisjointSet {
     const static int MAX = 100005;
  

@@ -1,3 +1,9 @@
+/**
+ * Description: Segment Tree with custom merge function.  
+ * Usage: construct O(N), query O(lg(N)), update O(lg(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 using namespace std;

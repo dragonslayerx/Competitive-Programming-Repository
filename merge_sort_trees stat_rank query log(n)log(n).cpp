@@ -1,3 +1,9 @@
+/**
+ * Description: Merge sort tree for order statistics and rank query in range. 
+ * Usage: insertST O(lg(N)), removeST O(lg(N)), queryST O(lg^2(N)), queryOrderST O(lg^2(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 int queryOrderST(int n, int ll, int rl, int ql, int qr, int k)
 {
     if (ll == rl) return ll;

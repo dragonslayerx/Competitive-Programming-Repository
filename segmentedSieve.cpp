@@ -1,3 +1,9 @@
+/**
+ * Description: Get primes in range [ll, ul].  
+ * Usage: getPrimes. O(NlgN) where N = ul-ll+1
+ * Source: https://github.com/dragonslayerx 
+ */
+
 void getPrimes(int ll, int ul, set<int> &largePrimes) {
     vector<bool> isprm;
     isprm.resize(ul - ll + 1);

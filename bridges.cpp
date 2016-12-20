@@ -1,3 +1,9 @@
+/**
+ * Description : Bridges (Find bridges in a graph) 
+ * Usage: See below O(V) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include<iostream>
 #include<vector>
 #include<cstdio>
@@ -55,11 +61,11 @@ int main(){
 	int n,m;
 	cin>>n>>m;
 
-    low.resize(n);
-    dfsNumbers.resize(n,INVALID_NUMBER);
+    	low.resize(n);
+    	dfsNumbers.resize(n,INVALID_NUMBER);
 
-    vector<pair<int,int> > edges;
-    vector<vector<int> > Td(n);
+    	vector<pair<int,int> > edges;
+    	vector<vector<int> > Td(n);
 
 	G.resize(n);
 	for(int i=0;i<m;i++){
@@ -72,9 +78,12 @@ int main(){
 		G[b].push_back(make_pair(a,i));
 	}
 
-    bridges.reserve(m);
+     	bridges.reserve(m);
 	int initialTime = 0;
 	for(int i=0;i<n;i++) {
 		calculateBridges(i, initialTime);
+	}
+	for (int i : bridges) {
+		cout << edges[i].first << " " << edges[i].second << endl;	
 	}
 }

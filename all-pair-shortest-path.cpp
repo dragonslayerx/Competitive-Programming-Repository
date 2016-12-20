@@ -1,3 +1,9 @@
+/**
+ * Description: All pair shortest paths (Returns a matrix B where B[i][j] is the M-length shortest path from vertex i to vertex j)
+ * Usage: getShortestPath O(N^3 log M)
+ * Source: https://github.com/dragonslayerx
+ */
+
 // Set the w(u, v) = INF if no edge exists between u and v.
 
 const int MAX = 50;
@@ -26,9 +32,9 @@ void multiply(int A[][MAX], int B[][MAX], int n) {
 	}
 }
 
-void pow(int A[][MAX], int B[][MAX], int n, int m) {
+void getShotestPath(int A[][MAX], int B[][MAX], int n, int m) {
 	if (m == 1)return;
-	pow(A, B, n, m/2);
+	getShotestPath(A, B, n, m/2);
 	multiply(A, A, n);
 	if (m & 1) multiply(A, B, n);
 }

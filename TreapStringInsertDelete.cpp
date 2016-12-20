@@ -1,3 +1,9 @@
+/**
+ * Description: Dynamic strings (Support for insert, delete of substring at arbitary position in a string)
+ * Usage: insert_substring, remove_substring, get_substring O(lg(N)) per character 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>

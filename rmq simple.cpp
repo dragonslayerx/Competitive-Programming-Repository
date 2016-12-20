@@ -1,3 +1,9 @@
+/**
+ * Description: Range Min Query using Sparse Table
+ * Usage: construct O(NlgN), query O(lg(N)) / O(1)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 using namespace std;
 
@@ -35,9 +41,6 @@ int main()
         cin >> a[i];
     construct(n);
 }
-
-
-
 
 // --------------- O(1) RMQ --------------------------
 

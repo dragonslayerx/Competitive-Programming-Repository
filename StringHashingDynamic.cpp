@@ -1,25 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <list>
-#include <cstdio>
-#include <cstring>
-#include <cctype>
-#include <queue>
-#include <set>
-#include <climits>
-#include <iomanip>
-#include <cassert>
-using namespace std;
-
-#define trace(x) cerr << #x << "=" << x <<endl;
-#define track(x) {cerr << #x << ":" << endl; for (int i = 0; i < x.size(); i++) {cerr << x[i] << " ";} cerr << endl;}
-#define trackvv(x) {cerr << #x << ":" << endl; for (int i = 0; i < x.size(); i++) { cerr << "i:" << i << endl; for (int j = 0; j < x[i].size(); j++){cerr << x[i][j] << " ";} cerr << endl;} cerr << endl;}
-#define trackcr(x) {cerr << #x << ":" << endl; for (auto i = x.begin(); i != x.end(); i++) {cerr << *i << " ";} cerr << endl;}
-
-#define MAX 1000005
-#define INF 1000000005LL
+/**
+ * Description: Dynamic String Hashing (Supports updating string characters)    
+ * Usage: See below, update O(lg(N)), getHash O(lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
 
 long long power(long long n, long long m, long long MOD)
 {

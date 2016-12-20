@@ -1,4 +1,10 @@
-// In case double hashing is required http://codeforces.com/contest/710/submission/20094958
+/**
+ * Description: Dynamic Segment tree (Support for inbetween insertion and array reversal)   
+ * Usage: initalize O(N), getHash O(n), getSubHash O(1), getRevSubHash O(1) 
+ * Note: In case double hashing is required http://codeforces.com/contest/710/submission/20094958
+ * Source: https://github.com/dragonslayerx 
+ */
+ 
 long long power(long long n, long long m, long long MOD){
     if (m == 0) return 1;
     long long x = power(n, m/2, MOD);

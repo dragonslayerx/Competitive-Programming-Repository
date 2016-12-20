@@ -1,3 +1,9 @@
+/**
+ * Description: Augmented tree for order statistics, rank query
+ * Usage: See below O(lg(N))
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp> //required
 #include <ext/pb_ds/tree_policy.hpp> //required
@@ -24,6 +30,6 @@ int main(){
 	s.upper_bound(1);
 	cout << s.size() << endl;
 	// special `tree` functions:
-	cout << s.order_of_key(3) << endl;	// the number of elements in s less than 3 (in this case, 0-based index of element 3)
+	cout << s.order_of_key(3) << endl; // the number of elements in s less than 3 (in this case, 0-based index of element 3)
 	cout << *s.find_by_order(1) << endl; // 1-st elemt in s (in sorted order, 0-based)
 }

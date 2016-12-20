@@ -1,3 +1,9 @@
+/**
+ * Description: Get size of subtree and level for a node in a rooted tree
+ * Usage: calcSize O(V)
+ * Source: https://github.com/dragonslayerx 
+ */
+
 ll stSize[200005];
 int lvl[200005];
 int calcSize(vector<vector<int> > &T, int u, int parent, int level){

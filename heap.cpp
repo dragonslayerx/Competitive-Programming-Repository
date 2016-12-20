@@ -1,3 +1,9 @@
+/**
+ * Description: A MaxMin priority queue that supports erase operation.
+ * Usage: insert O(lg(N)), erase O(lg(N)), maxElement O(lg(N)), minElement O(lg(N)) 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <map>
 #include <set>

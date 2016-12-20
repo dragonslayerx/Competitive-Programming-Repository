@@ -1,3 +1,10 @@
+/**
+ * Bit 2D: Support point updates and associative operations like sum over a 2-D matrix
+ * Complexity: lg(n) per query and update 
+ * Usage: query and update. Indexes should be 1-based 
+ * Source: https://github.com/dragonslayerx 
+ */
+
 #include <iostream>
 #include <cstdio>
 #include <vector>
