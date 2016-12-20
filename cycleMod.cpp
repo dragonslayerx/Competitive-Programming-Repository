@@ -1,7 +1,7 @@
 /**
  * Description: Calculate aggregate of k terms in a cyclic function 
- * Note: 	cycle length must be small. 
-	getNext and getCyclicFuncfion must be overridden accordingly. 
+ * Note: cycle length must be small. 
+	 getNext and getCyclicFuncfion must be overridden accordingly. 
  * Source: https://github.com/dragonslayerx 
  */
 
