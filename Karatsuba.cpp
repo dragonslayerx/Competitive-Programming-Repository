@@ -1,6 +1,6 @@
 /**
  * Description: Karatsuba Algorithm (Fast polynomial multiplication)
- * Usage: multiply O(N lg(N))
+ * Usage: multiply O(N^1.583)
  * Source: https://github.com/dragonslayerx 
  */
 
