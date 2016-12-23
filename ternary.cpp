@@ -1,6 +1,8 @@
 /**
  * Description: Ternary search
  * Usage: getMax O(lg(N))
+ * Note: The function f should be strictly increasing and then strictly decreasing. 
+ *       See http://codeforces.com/blog/entry/11497 for more help. 
  * Source: https://github.com/dragonslayerx 
  */
 
@@ -8,18 +10,15 @@ ll f(int mid) {
     
 }
 
-
 ll getMax(int ll, int rr) {
-    int l = ll, r = rr;
-    while (r - l > 3) {
-        int m1 = l + (r - l) / 3;
-        int m2 = r - (r - l) / 3;
-        if (f (m1) < f (m2)) {
-            l = m1;
+    int lo = ll, hi = rr;
+    while(lo < hi) {
+        int mid = (lo + hi) >> 1;
+        if(f(mid) > f(mid+1)) {
+            hi = mid;
         } else {
-            r = m2;
+            lo = mid+1;
         }
     }
-    for (int i = l; i <= r; i++) maxv = max(maxv, f(i));
-    return maxv;
+    return lo+1;
 }
