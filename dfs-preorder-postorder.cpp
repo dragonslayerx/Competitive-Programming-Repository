@@ -12,7 +12,7 @@ void preprocess(int u, int p) {
     prestamp[u] = counter++;
     for (int v : T[u]) {
         if (v != p) {
-            preprocess(v, p);
+            preprocess(v, u);
         }
     }
     poststamp[u] = counter++;
