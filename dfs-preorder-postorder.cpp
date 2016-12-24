@@ -5,24 +5,19 @@
  */
 
 
-vector<vector<int> > preorder;
-vector<vector<int> > postorder;
-
-int prestamp[MAX];
-int poststamp[MAX];
-bool isVisited[MAX];
+int prestamp[MAX], poststamp[MAX];
 
 int counter = 0;
-void preprocess(int u, int depth)
-{
-    isVisited[u] = true;
-    nodes[depth].push_back(u);
+void preprocess(int u, int p) {
     prestamp[u] = counter++;
-    for (int i = 0; i < T[u].size(); i++) {
-        int v = T[u][i];
-        if (!isVisited[v]) {
-            preprocess(v, depth+1);
+    for (int v : T[u]) {
+        if (v != p) {
+            preprocess(v, p);
         }
     }
     poststamp[u] = counter++;
+}
+
+bool isInSubtree(int u, int v) {
+    return ((prestamp[u] <= prestamp[v]) && (poststamp[u] >= poststamp[v]));
 }
