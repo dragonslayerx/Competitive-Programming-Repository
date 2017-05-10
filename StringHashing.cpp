@@ -1,5 +1,5 @@
 /**
- * Description: Dynamic String Hashing 
+ * Description: String Hashing 
  * Usage: initalize O(N), getHash O(n), getSubHash O(1), getRevSubHash O(1) 
  * Note: In case double hashing is required http://codeforces.com/contest/710/submission/20094958
  * Source: https://github.com/dragonslayerx 
