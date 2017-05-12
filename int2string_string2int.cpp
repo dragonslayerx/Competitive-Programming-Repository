@@ -1,8 +1,8 @@
 /**
  * Description: Converts integer to string and vice versa
- * Usage: toString (Converts an integer to its string representation) 
+ * Usage: toString (Converts an integer to its string representation)
  * 	toValue (Converts a string to its interger representation)
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
 
 template <typename T>
@@ -16,7 +16,7 @@ string toString(T x){
     return s;
 }
 
-long long toValue(string &x){
+long long toInt(string &x){
     long long sum = 0;
     for (int i = 0; i < x.size(); i++) {
         sum *= 10;

@@ -1,7 +1,7 @@
 /**
- * Description: Tree linearization (Find the aggregate queries over nodes of a subtree) 
+ * Description: Tree linearization (Find the aggregate queries over nodes of a subtree)
  * Usage: dfs O(N)
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
 
 #define MAX 100500
@@ -16,8 +16,8 @@ int dfs(int u){
 	int count = 1;
 	pos[u] = size++;
 	for (vector<int>::iterator i = G[u].begin(); i != G[u].end(); i++) {
-            	if (!isvisited[*i]) {
-            		count += dfs(*i);
+        if (!isvisited[*i]) {
+            count += dfs(*i);
 		}
 	}
 	child[pos[u]] = count;

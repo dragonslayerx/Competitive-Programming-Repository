@@ -1,7 +1,7 @@
 /**
- * Description: Get primes in range [ll, ul].  
+ * Description: Get primes in range [ll, ul].
  * Usage: getPrimes. O(NlgN) where N = ul-ll+1
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
 
 void getPrimes(int ll, int ul, set<int> &largePrimes) {
@@ -10,7 +10,7 @@ void getPrimes(int ll, int ul, set<int> &largePrimes) {
     for(int i = 0; i < ul - ll + 1; i++) {
         isprm[i] = 1;
     }
-    for (int i = 2; i * i <= ul; i++) {
+    for (int i = 2; i*i <= ul; i++) {
         if (isprime[i]) {
             int j;
             j = ll / i;
