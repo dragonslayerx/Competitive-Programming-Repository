@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 //Valid Indexes are from [0, n-1] and value are from [0, k-1]
 //Digits are taken from LSB
 template<class T, size_t digits, size_t k>
