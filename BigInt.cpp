@@ -214,6 +214,11 @@ public:
         reverse(s.begin(), s.end());
         return trimZeros(s);
     }
+	
+    friend std::ostream& operator<<(ostream &o, Bigint v) {
+        o << v.toString();
+        return o;
+    }
 };
 
 int main() {
