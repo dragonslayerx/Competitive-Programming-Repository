@@ -52,7 +52,7 @@ class KDTree
         for (int i = 0; i < N; i++) {
             dist += (a[i] - b[i]) * (a[i] - b[i]);
         }
-        return pow(dist, 0.5);
+        return pow(dist, (double)1.0/N);
     }
 
     Node* root;
