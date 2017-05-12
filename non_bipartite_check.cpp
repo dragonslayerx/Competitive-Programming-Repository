@@ -1,7 +1,7 @@
 /**
- * Description: Checks if a graph is non bipartite. Assigns color to each node in case it is. 
- * Usage: dfs returns true if the graph in nonbipartite O(V + E) 
- * Source: https://github.com/dragonslayerx 
+ * Description: Checks if a graph is non bipartite. Assigns color to each node in case it is.
+ * Usage: dfs returns true if the graph in nonbipartite O(V + E)
+ * Source: https://github.com/dragonslayerx
  */
 
 #define MAX 100005
@@ -10,7 +10,7 @@ bool color[MAX];
 
 long long countA, countB;
 
-bool dfs(int u, bool colorU){
+bool isNonBipartite(int u, bool colorU){
     color[u] = colorU;
     (color[u])? countA++: countB++;
     isVisited[u] = true;

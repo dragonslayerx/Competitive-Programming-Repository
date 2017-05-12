@@ -1,7 +1,7 @@
 /**
  * Description: Quick Select (Find Kth order statistics)
  * Usage: quick_select O(N)
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
 
 #include <iostream>
@@ -12,36 +12,25 @@
 using namespace std;
 
 int randomised_partition(vector<int> &A, int p, int q){
-	int random = rand() % (q - p + 1) + p;
+	int random = (rand() % (q-p+1)) + p;
 	swap(A[q], A[random]);
 	int ptr = p;
-	for (int i = p; i <= q; i++) { 
-		if (A[i] <= A[q]) { 
+	for (int i = p; i <= q; i++) {
+		if (A[i] <= A[q]) {
 			swap(A[i], A[ptr++]);
 		}
 	}
-#ifdef DEBUG
-	for (int i = p; i <= q; i++) 
-		cout << A[i] << " ";
-	cout << endl;
-#endif
 	return ptr;
 }
 
 int quick_select(vector<int> &A, int p, int q, int k){
-#ifdef DEBUG
-	for (int i = p; i <= q; i++) 
-		cout << A[i] << " ";
-	cout << endl;
-#endif
-	if (p == q)
-		return A[p];
+	if (p == q) return A[p];
 	int pivot = randomised_partition(A, p, q);
-	if (pivot == k) 
+	if (pivot == k)
 		return A[pivot];
 	else if (k < pivot) {
 		return quick_select(A, p, pivot - 1, k);
-	} else { 
+	} else {
 		return quick_select(A, pivot + 1, q, k);
 	}
 }
@@ -54,7 +43,7 @@ int main(){
 		int n;
 		scanf("%d", &n);
 		vector<int> A(n);
-		for (int i = 0; i < n; i++) 
+		for (int i = 0; i < n; i++)
 			scanf("%d", &A[i]);
 		int q;
 		cin >> q;

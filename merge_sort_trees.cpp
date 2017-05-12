@@ -1,7 +1,7 @@
 /**
- * Description: Merge sort tree 
+ * Description: Merge sort tree
  * Usage: construct O(Nlg(N)), query O(lg(N))
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
 
 #define MAX 30050
@@ -39,6 +39,7 @@ void construct(int n, int ll, int rl) {
 int query(int n, int ll, int rl, int ql, int qr, int k) {
     if (rl < ql || ll > qr) return 0;
     if (ll >= ql && rl <= qr) {
+        // modify here
         int t = st[n].end() - upper_bound(st[n].begin(), st[n].end(), k);
         return t;
     }
