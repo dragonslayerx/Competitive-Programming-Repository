@@ -29,10 +29,10 @@ class Disjoint_Set {
 			if (rank[rep_x] > rank[rep_y]) {
 				P[rep_y] = rep_x;
 			} else {
-			  P[rep_x] = rep_y;
+				P[rep_x] = rep_y;
 				if (rank[rep_x] == rank[rep_y]){
-          rank[rep_y]++;
-        }
+					rank[rep_y]++;
+				}
 			}
 		}
 		
