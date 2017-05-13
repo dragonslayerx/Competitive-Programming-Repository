@@ -1,7 +1,8 @@
 /**
  * Description: Calculate aggregate of k terms in a cyclic function
  * Note: cycle length must be small.
-	 getNext and getCyclicFuncfion must be overridden accordingly.
+ *	 getNext and getCyclicFuncfion must be overridden accordingly.
+ * Assumption: seed is considered as the 0th element of the sequence
  * Source: https://github.com/dragonslayerx
  */
 
@@ -23,7 +24,7 @@ long long getSum(long long seed, long long k) {
     const int INF = 1e9;
     long long cycleLength = INF, cycleStart = -1;
     map<int,int> index;
-    index[seed] = 0;
+    index[getCyclic(seed)] = 0;
     {
         long long x = seed;
         for (int i = 1; i <= k; i++) {
