@@ -5,7 +5,7 @@
  */
 
 #define MAX 2050
-int edist[MAX][MAX];
+int edist[2][MAX];
 
 class Edist {
     public:
