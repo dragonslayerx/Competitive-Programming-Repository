@@ -1,5 +1,5 @@
 /**
- * Description: BigInt (Big Integer library) 
+ * Description: BigInt (Big Integer library)
  * Usage:  See constructors, operators like +, -, *, /, >, >=, <, <=, ==, toString
  * Note: Remove references '&' in overloaded operators for chaining operations.
  * Source: https://github.com/dragonslayerx
@@ -187,7 +187,7 @@ public:
     }
 
     bool operator >(Bigint &b) {
-        return greater(this->x, this->length, b.x, b.length);
+        return !greater(b.x, b.length, this->x, this->length);
     }
 
     bool operator >=(Bigint &b) {
@@ -214,7 +214,7 @@ public:
         reverse(s.begin(), s.end());
         return trimZeros(s);
     }
-	
+
     friend std::ostream& operator<<(ostream &o, Bigint v) {
         o << v.toString();
         return o;
@@ -222,4 +222,13 @@ public:
 };
 
 int main() {
+    Bigint A("123456789"); // Construct Bigint using string representation
+    Bigint B(987654321); // Construct Bigint using integer representation
+    Bigint C("456789");
+    cout << A * B << endl; // Overridden ostream
+    cout << A * B + C << endl; // Chaining operations
+    cout << (A > B) << endl;
+    // logical operations
+    if (A > B) cout << "A is greater than B" << endl;
+    else cout << "B is greater than A" << endl;
 }

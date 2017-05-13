@@ -4,6 +4,14 @@
  * Source: https://github.com/dragonslayerx
  */
 
+ #include <iostream>
+ #include <cstdio>
+ #include <vector>
+ using namespace std;
+
+ const int MAX = 100;
+ const int INF = 1e9+5;
+
 struct edges {
     int u;
     int v;
@@ -30,8 +38,8 @@ int main(){
 		parent[i] = 0;
 		dist[i] = INF;
 	}
-	
-	dist[0] = 0;
+
+	dist[0] = 0; // distance of source node = 0
 	for (int i = 0; i < n-1; i++) {
 		for (int j = 0; j < edge.size(); j++) {
 			int u = edge[j].u;
@@ -56,8 +64,12 @@ int main(){
 			break;
 		}
 	}
-	
-	for (int i = 0; i < n; i++) {
-		cout << i << " " << dist[i] << endl;
+
+	if (negCycleExists) {
+        cout << "Negative Cycle Exists";
+	} else {
+        for (int i = 0; i < n; i++) {
+            cout << i << "=>" << dist[i] << endl;
+        }
 	}
 }

@@ -20,6 +20,6 @@ class Bitmask {
 		return (mask & (1 << i));
 	}
 	const int operator [](int i) {
-        return get(i);
+	    return get(i);
 	}
 };
