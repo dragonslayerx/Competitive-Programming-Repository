@@ -53,9 +53,13 @@ int main()
         for (int i = 0; i < m; i++) {
             int a, b;
             scanf("%d%d", &a, &b);
-            d[a][b]++; d[b][a]++;
             W[a][b]++; W[b][a]++;
         }
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			d[i][j]=W[i][j];
+		}
+	}
         int q, L;
         scanf("%d%d", &q, &L);
         pow(d, W, n, L);
