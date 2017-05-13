@@ -2,8 +2,13 @@
  * Description: Rabin-Karp Hashing
  * Usage: findSubstring O(N)
  * Note: Its not useful as adversary can generate cases like (T="aaaaaaaaaaa", P="aaa").
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
+
+ #include <iostream>
+ #include <cstdio>
+ using namespace std;
+
 
 long long pow(long long a, long long b, long long MOD){
 	if (b == 0) return 1;
@@ -14,8 +19,8 @@ long long pow(long long a, long long b, long long MOD){
 	} else {
 		return p % MOD;
 	}
-}	
-	
+}
+
 typedef long long int64;
 int findSubtring(string T, string P, int d, int MOD){
 	int n =T.size(), m = P.size();
@@ -26,7 +31,7 @@ int findSubtring(string T, string P, int d, int MOD){
 		t *= d, t += (T[i] - 'a'), t %= MOD;
 	}
 	for (int i = 0; i < n - m + 1; i++){
-		cout << t << " " << p << endl;
+		//cerr << t << " " << p << endl;
 		if (p == t)  {
 			if (T.substr(i, m) == P) {
 				return i;
@@ -40,7 +45,6 @@ int findSubtring(string T, string P, int d, int MOD){
 }
 
 
-int main()
-{
-	cout << Rabin_Karp("swapnil", "apn", 26, 1000000007) << endl;
+int main(){
+	cout << findSubtring("swapnil", "n", 26, 1000000007) << endl;
 }

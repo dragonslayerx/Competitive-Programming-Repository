@@ -28,15 +28,15 @@ public:
     }
 
     void construct(vector<value_type> &array){
-        for (int i = 0; i < array.size(); i++)
-            rmq[0][i] = i;
+        for (int i = 0; i < array.size(); i++) rmq[0][i] = i;
         for (int k = 1; k < size; k++) {
             for (int i = 0; i < a.size(); i++) {
                 int length = 1 << (k - 1);
-                if (i + length >= a.size() || a.at(rmq[k - 1][i]) < a.at(rmq[k - 1][i + length]))
+                if (i + length >= a.size() || a.at(rmq[k - 1][i]) < a.at(rmq[k - 1][i + length])){
                     rmq[k][i] = rmq[k - 1][i];
-                else
+                } else {
                     rmq[k][i] = rmq[k - 1][i + length];
+                }
             }
         }
     }

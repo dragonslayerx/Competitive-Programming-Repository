@@ -1,16 +1,28 @@
 /**
  * Max Xor queries : Find maximum xor of an integer with a set of integers
  * Usage: insert O(lg(N)), erase O(lg(N)), maximize O(lg(N))
+ * Assumption: range of elements should be less than 2^45
  * Source: https://github.com/dragonslayerx
  */
 
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
 int size=0;
-node pool[5000005];
+struct node {
+    node *left;
+    node *right;
+    int count;
+    node() {
+        left = right = NULL;
+        count = 0;
+    }
+} pool[5000005];
 
 class Trie {
     #define MAXB 45
     node *root;
-    public:
     Trie() {
         root = &pool[size++];
     }
@@ -59,6 +71,7 @@ class Trie {
         }
     }
 
+public:
     long long maximize(long long x){
         char s[50];
         tostring(s, x);
@@ -97,3 +110,6 @@ class Trie {
         erase_trie(s);
     }
 };
+
+int main() {
+}

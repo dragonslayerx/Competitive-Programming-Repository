@@ -1,14 +1,13 @@
-/**
+e.i/**
  * Description: Segment Tree 2D (Support point updates and associative operations like sum, max on a 2-D integer matrix)
- * Usage: construct O(NM), 
- *  	query O( lg(N) lg(M) ), 
- * 	update O( lg(N) lg(M) )  
+ * Usage: construct O(NM),
+ *  	query O( lg(N) lg(M) ),
+ * 	update O( lg(N) lg(M) )
  * Source: https://github.com/dragonslayerx
  */
 class SegTree2D {
     vector<vector<long long> > segtree;
     size_t n, m;
-    long long def;
 
     bool OUT(int l, int r, int ql, int qr){
         return (qr < l || ql > r);

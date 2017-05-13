@@ -1,10 +1,14 @@
 /**
  * Description: Matrix Exponentiation (Finds the Kth element of a linear recurrence using matrix exponentiation)
  * Usage: solve O(N^3 lg (K))
- * Source: https://github.com/dragonslayerx 
+ * Source: https://github.com/dragonslayerx
  */
 
+#include <iostream>
+#include <vector>
+using namespace std;
 
+typedef long long ll;
 const int MOD = 1000000007;
 
 template <typename T, size_t N>
@@ -52,3 +56,13 @@ void solve(T transition[N][N], T cur[N], ll k, T next[N]) {
         }
     }
 }
+
+int main() {
+    long long A[2][2] = {{1, 1}, {1, 0}};
+    long long cur[2] = {1, 0}, next[2];
+    int k;
+    cin >> k;
+    solve(A, cur, k, next);
+    cout << next[0] << endl;
+}
+
