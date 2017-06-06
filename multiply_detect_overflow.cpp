@@ -20,7 +20,8 @@ long long mul(long long a, long long b) {
 	r3 = t.second * s.first;
 	r4 = t.second * s.second;
 
-	if (r1 && (r2 || r3 || r4)) return INF;
+	if (r1 > 1) return INF;
+	else if (r1 && (r2 || r3 || r4)) return INF;
 	else if ((r2 + r3) > 1000000000) return INF;
 	else if ((r2 + r3)*1000000000 + r4 > 1000000000000000000LL) return INF;
 	else return r1*1000000000000000000LL + (r2 + r3)*1000000000 + r4;
