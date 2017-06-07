@@ -111,7 +111,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
 * **Misc** :
   * [Sum of floor(x) with x=1:n](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/aggreate_sqrt_distinct_values.cpp)
   * [Sum of cyclic functions](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/aggregate_cyclic_function.cpp)
-  * [Closest element before/after every element](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/closest_max_element_before_after_index_using_stack.cpp)
+  * [Closest larger element before/after every element](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/closest_max_element_before_after_index_using_stack.cpp)
   * [Multiply Long Long Integers](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/multiply_longlong_integers.cpp)
   * [Multiply Long Long Integers - Overflow detection](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/multiply_detect_overflow.cpp)
   * [Scanline - Merge intersecting intervals](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/scanline_merge_overlapping_intervals.cpp)
