@@ -19,6 +19,14 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
     * [2D Segment Trees](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_2D.cpp)
     * [Dynamic Segment Trees - Insertion/Deletion between elements](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_dynamic_using_treaps.cpp)
     * [Dynamic Segment Trees - Reverse a segment](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_dynamic_reverse_subarray_using_treap.cpp)
+    
+  * *Merge Sort Trees* :
+    * [Merge sort trees](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/merge_sort_trees.cpp)
+    * [Merge sort trees - Order Statistics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/merge_sort_trees_order_stat_query.cpp) 
+    
+  * *Mo Algorithm* :
+    * [Mo Algorithm - Arrays](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/mo_algorithm_offline_range_query.cpp)
+    
  
  * **Persistent Data Structures** :
    * *Persistent Segment Trees (SegTree)* :
@@ -55,18 +63,29 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
 * **Strings** :
    * *String Algorithms* :
        * [Z Algorithm](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/Z_algorithm_max_prefix_match.cpp)
-   
-   * *String Hashing* :
-       * [Rolling Hashing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/string_hashing.cpp)
+       * [Rolling String Hashing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/string_hashing.cpp)
         
-        
-        
-
 * **Sorting** :
+  * [Merge Sort](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/merge_sort_count_inversion.cpp)
+  
 * **Fast Input/Output** :
+
 * **Misc. Data Structures** :
 * **Polynomial Multiplication** :
+
+
 * **Number Theory Algorithms** :
+  * *Sieve* :
+      * [Sieve of Eratosthenes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/prime_sieve.cpp)
+      * [Counting Prime Factors](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/prime_factor_count.cpp)
+  
+  * *Misc* :
+      * [Mobeius Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/mobeius_function.cpp)
+  
+   
+   
+
+
 
 
 
