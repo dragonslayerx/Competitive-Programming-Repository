@@ -30,12 +30,17 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
     * [Digit DP / Bitwise DP](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dynamic_programming_templates.cpp)
   * *Standard DP Problems* :
     * [Longest Increasing Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/longest_increasing_subsequence_lis_binary_search.cpp)
+    * [Longest Palindromic Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/palindrome_longest_subsequence.cpp)
     * [Levenstein Distance / Edit Distance](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/edit_distance_levenstein_dynamic_programming.cpp)
 * **Graphs** :
-  * *Dijsktra Shortest Path Algorithms* :
+  * *Single Source Shortest Path Algorithms* :
     * [Dijkstra in dense graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dijsktra_dense_graphs.cpp)
     * [Dijkstra using priority queue](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dijkstra_using_priority_queue.cpp)
     * [Kth Shortest Path between Nodes using Dijkstra](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/kth_shortest_path_between_nodes_graph.cpp)
+    * [Bellman Ford Negative cycle detection](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/bellman_ford.cpp)
+  * *All Pair shortest path* :
+    * [Using Binary exponentiation](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/all_pair_shortest_path_binary_exponentation.cpp)
+    * [Floyd Warshall](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/all_pair_shortest_path_floyd_warshall.cpp)
   * *Cycle Detection* :
     * [Cycle detection in Undirected/Directed Graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/cycle_detection_in_graph.cpp)
   * *Minimum Spanning tree* :
@@ -43,11 +48,15 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   * *Topological Sort / Strongly Connected Component* :
     * [Topological Sort](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/topological_sort_kosaraju.cpp)
     * [Strongly Connected Component](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/strongly_connected_components_kosaraju.cpp) 
+  * *Maxflow/Matching* :
+    * [Hopkroft Karp Max Matching](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/max_bipartite_matching_hopcroft_karp.cpp)
+    * [Dinic Max Flow](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/max_flow_network_dinic_algorithm.cpp)
   * *Misc* :
     * [Bridges in Graph](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/bridges_in_graph.cpp)
     * [Connectivity](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/isConnected_using_bfs.cpp)
+    * [Bipartite Check](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/non_bipartite_check.cpp)
 * **Trees** :
-    * *Node Queries* :
+    * *Ancestor queries* :
         * [Lowest Common Ancestor](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/lowest_common_ancestor_lca.cpp)
         * [Kth Ancestor](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/kth_ancestor_tree.cpp)
     * *Path queries* :
@@ -56,8 +65,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
         * [Heavy Light Decomposition Weighted Edges](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_weighted_edges%20(hld).cpp)
     * *Misc* :
         * [Diameter of Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_diameter.cpp)
-        * [Preorder/Postorder stamps, Is it in Subtree?](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_dfs_preorder_postorder_isInSubtree.cpp)
-    
+        * [Preorder/Postorder stamps, Is it in Subtree?](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_dfs_preorder_postorder_isInSubtree.cpp) 
 * **Binary Exponentiation** :
    * [Calculate n^m using Binary exponentiation](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/power_binary_exponentiation.cpp)
    * [Solving Linear Recurrences](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/linear_recurrence_matrix_exponentiation.cpp)
@@ -65,8 +73,10 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * *String Algorithms* :
        * [Z Algorithm](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/Z_algorithm_max_prefix_match.cpp)
        * [Rolling String Hashing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/string_hashing.cpp)
+       * [Rolling String Hashing for Synamic Strings](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/string_hashing_dynamic_segment_trees.cpp)
 * **Sorting** :
   * [Merge Sort](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/merge_sort_count_inversion.cpp)
+  * [Quick Select](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/quick_select_order_stat_linear.cpp)
 * **Fast Input/Output, String/Integer Conversion** :
    * [Fast Input/Output](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/fast_readInt_writeInt_function.cpp)
    * [String/Integer Conversion](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/int2string_string2int.cpp)
@@ -75,6 +85,9 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * [Disjoint Set (Supports Undo Operation)](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/disjoint_set_with_undo_operation.cpp)
    * [Max/Min Priority Queue with update](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heap_using_multiset_max_min_insert_erase_update.cpp)
    * [Binary Trie for xor maximization/minimization](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/binary_trie_max_xor.cpp)
+   * [Augmented Binary Tree for order statistics and rank query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/orderstat_rank_query_augmented_bst.cpp)
+   * [Trie](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/trie_insertion_deleteion.cpp)
+   * [Bigint](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/bigint_library.cpp)
 * **Persistent Data Structures** :
   * *Persistent Segment Trees (SegTree)* :
     * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
@@ -92,7 +105,12 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   * *Misc* :
       * [Mobeius Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/mobeius_function.cpp)
       * [Euler Totient Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/euler_phi_euler_totient_function.cpp)
-      * [Lucas Theorm - Combinatorics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/lucas_combinatorics.cpp) 
+      * [Lucas Theorm - Combinatorics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/lucas_combinatorics.cpp)  
+* **Misc** :
+  * [Sum of floor(x) with x=1:n](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/aggreate_sqrt_distinct_values.cpp)
+  * [Sum of cyclic functions](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/aggregate_cyclic_function.cpp)
+   * [Closest element before/after every element](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/closest_max_element_before_after_index_using_stack.cpp)
+  
       
       
   
