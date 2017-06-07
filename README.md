@@ -4,7 +4,28 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
 ### The following topics are covered:
 
 #### Range Updates and Queries
-* **Topics here** : 
+* **Range Aggregate Queries** :
+* **Dynamic Programming** :
+* **Graphs** :
+* **Trees** :
+* **Strings** :
+* **Sorting** :
+* **Fast Input/Output** :
+* **Misc. Data Structures** :
+* **Polynomial Multiplication** :
+* **Number Theory Algorithms** :
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
