@@ -40,17 +40,24 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
     * [Cycle detection in Undirected/Directed Graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/cycle_detection_in_graph.cpp)
   * *Minimum Spanning tree* :
     * [Kruskal Algorithm](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/kruskal_min_spanning_tree.cpp)
+  * *Topological Sort / Strongly Connected Component* :
+    * [Topological Sort](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/topological_sort_kosaraju.cpp)
+    * [Strongly Connected Component](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/strongly_connected_components_kosaraju.cpp) 
   * *Misc* :
     * [Bridges in Graph](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/bridges_in_graph.cpp)
     * [Connectivity](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/isConnected_using_bfs.cpp)
 * **Trees** :
-    * [Diameter of Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_diameter.cpp)
     * *Node Queries* :
         * [Lowest Common Ancestor](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/lowest_common_ancestor_lca.cpp)
         * [Kth Ancestor](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/kth_ancestor_tree.cpp)
-    * *Decomposition* :
+    * *Path queries* :
+        * [Sparse Table](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/trees_path_query_sparse_tables.cpp)
         * [Heavy Light Decomposition Weighted Nodes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_wieghted_vertices(hld).cpp)
         * [Heavy Light Decomposition Weighted Edges](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_weighted_edges%20(hld).cpp)
+    * *Misc* :
+        * [Diameter of Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_diameter.cpp)
+        * [Preorder/Postorder stamps, Is it in Subtree?](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_dfs_preorder_postorder_isInSubtree.cpp)
+    
 * **Binary Exponentiation** :
    * [Calculate n^m using Binary exponentiation](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/power_binary_exponentiation.cpp)
    * [Solving Linear Recurrences](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/linear_recurrence_matrix_exponentiation.cpp)
@@ -77,6 +84,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
       * [Fermat's Primality Check](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/primality_check_fermat.cpp)
   * *Sieve* :
       * [Sieve of Eratosthenes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/prime_sieve.cpp)
+      * [Segmented Sieve for large primes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segmented_sieve_large_primes.cpp)
       * [Counting Prime Factors](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/prime_factor_count.cpp)
   * *Polynomial Multiplication* :
       * [Fast Fourier Tranform](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/fast_fourier_transform_fft.cpp)
