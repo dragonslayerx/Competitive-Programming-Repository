@@ -78,7 +78,6 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   * *Sieve* :
       * [Sieve of Eratosthenes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/prime_sieve.cpp)
       * [Counting Prime Factors](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/prime_factor_count.cpp)
-  
   * *Polynomial Multiplication* :
       * [Fast Fourier Tranform](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/fast_fourier_transform_fft.cpp)
       * [Karatsuba](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/karatsuba_polynomial_multiplication.cpp)
