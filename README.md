@@ -24,11 +24,19 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * *Persistent Segment Trees (SegTree)* :
        * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
        * [Persistent Segment Tree - Order Statistics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent_order_stat.cpp)
-    
   
-    
 * **Dynamic Programming** :
+   * *Dynamic Programming Templates* :
+       * [Digit DP / Bitwise DP](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dynamic_programming_templates.cpp)
+       
 * **Graphs** :
+   * *Dijsktra Shortest Path Algorithms* :
+        * [Dijkstra in dense graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dijsktra_dense_graphs.cpp)
+        * [Dijkstra using priority queue](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dijkstra_using_priority_queue.cpp)
+        
+   * *Cycle Detection* :
+        * [Cycle detection in Undirected/Directed Graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/cycle_detection_in_graph.cpp)
+        
 * **Trees** :
 * **Strings** :
 * **Sorting** :
