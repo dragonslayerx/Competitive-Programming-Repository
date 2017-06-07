@@ -30,12 +30,6 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   * *Mo Algorithm* :
     * [Mo Algorithm - Arrays](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/mo_algorithm_offline_range_query.cpp)
     
- 
-* **Persistent Data Structures** :
-  * *Persistent Segment Trees (SegTree)* :
-    * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
-    * [Persistent Segment Tree - Order Statistics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent_order_stat.cpp)
-  
 * **Dynamic Programming** :
   * *Dynamic Programming Templates* :
     * [Digit DP / Bitwise DP](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dynamic_programming_templates.cpp)
@@ -71,6 +65,9 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
         * [Heavy Light Decomposition Weighted Nodes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_wieghted_vertices(hld).cpp)
         * [Heavy Light Decomposition Weighted Edges](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_weighted_edges%20(hld).cpp)
     
+* **Binary Exponentiation** :
+   * [Calculate n^m using Binary exponentiation](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/power_binary_exponentiation.cpp)
+   * [Solving Linear Recurrences](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/linear_recurrence_matrix_exponentiation.cpp)
 
 * **Strings** :
    * *String Algorithms* :
@@ -88,6 +85,12 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * [Disjoint Set](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/disjoint_set.cpp)
    * [Disjoint Set (Supports Undo Operation)](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/disjoint_set_with_undo_operation.cpp)
    * [Max/Min Priority Queue with update](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heap_using_multiset_max_min_insert_erase_update.cpp)
+   * [Binary Trie for xor maximization/minimization](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/binary_trie_max_xor.cpp)
+
+* **Persistent Data Structures** :
+  * *Persistent Segment Trees (SegTree)* :
+    * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
+    * [Persistent Segment Tree - Order Statistics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent_order_stat.cpp)
    
 * **Number Theory Algorithms** :
   * *Primality Check* :
@@ -103,7 +106,10 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   
   * *Misc* :
       * [Mobeius Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/mobeius_function.cpp)
-      * [Euler Totient Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/euler_phi_euler_totient_function.cpp) 
+      * [Euler Totient Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/euler_phi_euler_totient_function.cpp)
+      * [Lucas Theorm - Combinatorics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/lucas_combinatorics.cpp) 
+      
+      
   
   
    
