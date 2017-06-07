@@ -29,6 +29,10 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * *Dynamic Programming Templates* :
        * [Digit DP / Bitwise DP](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dynamic_programming_templates.cpp)
        
+   * *Standard DP Problems* :
+       * [Longest Increasing Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/longest_increasing_subsequence_lis_binary_search.cpp)
+       * [Levenstein Distance / Edit Distance](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/edit_distance_levenstein_dynamic_programming.cpp)
+             
 * **Graphs** :
    * *Dijsktra Shortest Path Algorithms* :
         * [Dijkstra in dense graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/dijsktra_dense_graphs.cpp)
@@ -36,9 +40,28 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
         
    * *Cycle Detection* :
         * [Cycle detection in Undirected/Directed Graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/cycle_detection_in_graph.cpp)
+   
+   * *Minimum Spanning tree* :
+        * [Kruskal Algorithm](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/kruskal_min_spanning_tree.cpp)
         
 * **Trees** :
+    * [Diameter of Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/tree_diameter.cpp)
+    
+    * *Decomposition* :
+        * [Heavy Light Decomposition Weighted Nodes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_wieghted_vertices(hld).cpp)
+        * [Heavy Light Decomposition Weighted Edges](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heavy_light_decomposition_weighted_edges%20(hld).cpp)
+    
+
 * **Strings** :
+   * *String Algorithms* :
+       * [Z Algorithm](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/Z_algorithm_max_prefix_match.cpp)
+   
+   * *String Hashing* :
+       * [Rolling Hashing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/string_hashing.cpp)
+        
+        
+        
+
 * **Sorting** :
 * **Fast Input/Output** :
 * **Misc. Data Structures** :
