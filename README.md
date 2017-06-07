@@ -13,11 +13,14 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   
   * *Segment Trees (SegTree)* :
     * [Point Update Range Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_range_query_point_update.cpp) 
+    * [Fast Iterative Segtrees](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_trees_interative_fast.cpp)
     * [Range Update Point Query - Lazy Propogation](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_range_query_range_update_lazy_propogation.cpp)
-    * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
-    * [Persistent Segment Tree - Order Statistics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent_order_stat.cpp)
     
     
+ * **Persistent Data Structures** :
+   * *Persistent Segment Trees (SegTree)* :
+       * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
+       * [Persistent Segment Tree - Order Statistics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent_order_stat.cpp)
     
   
     
