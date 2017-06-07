@@ -85,9 +85,10 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * [Disjoint Set (Supports Undo Operation)](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/disjoint_set_with_undo_operation.cpp)
    * [Max/Min Priority Queue with update](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/heap_using_multiset_max_min_insert_erase_update.cpp)
    * [Binary Trie for xor maximization/minimization](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/binary_trie_max_xor.cpp)
-   * [Augmented Binary Tree for order statistics and rank query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/orderstat_rank_query_augmented_bst.cpp)
-   * [Trie](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/trie_insertion_deleteion.cpp)
    * [Bigint](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/bigint_library.cpp)
+   * [Augmented Binary Tree for order statistics and rank query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/orderstat_rank_query_augmented_bst.cpp)
+   * [Monotone Priority Queue](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/monotone_priority_queue.cpp)
+   * [Trie](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/trie_insertion_deleteion.cpp)
 * **Persistent Data Structures** :
   * *Persistent Segment Trees (SegTree)* :
     * [Persistent Segment Tree](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/segment_tree_persistent.cpp)
@@ -103,13 +104,18 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
       * [Fast Fourier Tranform](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/fast_fourier_transform_fft.cpp)
       * [Karatsuba](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/karatsuba_polynomial_multiplication.cpp)
   * *Misc* :
+      * [Combinatorial and Catalan - Factorial preprocessing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/factorial_preprocessing.cpp)
       * [Mobeius Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/mobeius_function.cpp)
       * [Euler Totient Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/euler_phi_euler_totient_function.cpp)
       * [Lucas Theorm - Combinatorics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/lucas_combinatorics.cpp)  
 * **Misc** :
   * [Sum of floor(x) with x=1:n](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/aggreate_sqrt_distinct_values.cpp)
   * [Sum of cyclic functions](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/aggregate_cyclic_function.cpp)
-   * [Closest element before/after every element](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/closest_max_element_before_after_index_using_stack.cpp)
+  * [Closest element before/after every element](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/closest_max_element_before_after_index_using_stack.cpp)
+  * [Multiply Long Long Integers](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/multiply_longlong_integers.cpp)
+  * [Multiply Long Long Integers - Overflow detection](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/multiply_detect_overflow.cpp)
+  * [Scanline - Merge intersecting intervals](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/dragonslayerx-readme-update/scanline_merge_overlapping_intervals.cpp)
+  
   
       
       
