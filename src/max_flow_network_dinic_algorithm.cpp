@@ -1,8 +1,9 @@
 
 #define NN 1505
  
-int cap[NN][NN], deg[NN];
+int cap[NN][NN];
 vector<vector<int> > adj;
+
 int q[NN], prev[NN];
 int dinic( int n, int s, int t )
 {
