@@ -75,7 +75,7 @@ void processlcp(int n) {
     }
 }
 
-int frameSize[MAX];
+int frameSize[1000005];
 int preprocess(){
     for(int i=0, pow2=1; pow2 < MAX;  pow2*=2, i++) frameSize[pow2]=i;
     for(int i=3;i<MAX;i++) {
