@@ -13,15 +13,16 @@
 using namespace std;
 
 //----------------------
-const int INF = 1000000000+5;
-
 // inputs
 string s;
 int n;
 
+const int MAX = 1000005;
+const int INF = 1000000000+5;
+
 int lgn=0;
-int sa[25][1000005];
-int rankSuf[1000005];
+int sa[25][MAX];
+int rankSuf[MAX];
 void constructSA() {
     map<int,int> rank;
     for (int i=0; i<n; i++) rank[s[i]]=0;
@@ -56,7 +57,7 @@ int getLCP(int p, int q) {
     return l;
 }
 
-int lcp[25][1000005];
+int lcp[25][MAX];
 void processlcp() {
     int N=n-1;
     for (int i=0; i<N; i++) lcp[0][i]=getLCP(rankSuf[i], rankSuf[i+1]);
@@ -69,10 +70,10 @@ void processlcp() {
     }
 }
 
-int frameSize[1000005];
+int frameSize[MAX];
 int processFrameSize(){
-    for(int i=0, pow2=1; pow2<1000005;  pow2*=2, i++) frameSize[pow2]=i;
-    for(int i=3;i<1000005;i++) {
+    for(int i=0, pow2=1; pow2<MAX;  pow2*=2, i++) frameSize[pow2]=i;
+    for(int i=3;i<MAX;i++) {
         if(frameSize[i]==0) {
             frameSize[i]=frameSize[i-1];
         }
