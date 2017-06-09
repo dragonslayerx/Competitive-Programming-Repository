@@ -12,24 +12,17 @@
 #include <queue>
 using namespace std;
 
-#define trace(x) {cerr << #x << "=" << x <<endl;}
-#define trace2(x, y) {cerr << #x << "=" << x << " " << #y << "=" << y <<endl;}
-template <typename T> ostream& operator<<(ostream& os, const vector<T> &p){os << "[ "; for (T x: p) os << x << " "; os << "]" << endl; return os;}
-template <typename T> ostream& operator<<(ostream& os, const set<T> &p){os << "{ "; for (T x: p) os << x << " "; os << "}" << endl; return os;}
-template <typename Tk, typename Tv> ostream& operator<<(ostream& os, const map<Tk, Tv> &p){os << "{ "; for (pair<Tk, Tv> x: p) os << x << " "; os << "}" << endl; return os;}
-template <typename Tk, typename Tv> ostream& operator<<(ostream& os, const pair<Tk, Tv> &p){os << "{" << p.first << ',' << p.second << "}";return os;}
-
-typedef long long ll;
-
-const int MOD = 1000000000+7;
+//----------------------
 const int INF = 1000000000+5;
-const int MAX = 200005;
+
+// inputs
+string s;
+int n;
 
 int lgn=0;
 int sa[25][1000005];
 int rankSuf[1000005];
-void constructSA(const char s[], int n) {
-    cout << s << endl;
+void constructSA() {
     map<int,int> rank;
     for (int i=0; i<n; i++) rank[s[i]]=0;
     int ctr=1;
@@ -58,12 +51,13 @@ int getLCP(int p, int q) {
         if (sa[i][p]==sa[i][q]) {
             l+=len; p+=len, q+=len;
         }
+        if (p>=n || q>=n) break;
     }
     return l;
 }
 
 int lcp[25][1000005];
-void processlcp(int n) {
+void processlcp() {
     int N=n-1;
     for (int i=0; i<N; i++) lcp[0][i]=getLCP(rankSuf[i], rankSuf[i+1]);
     int lgn=0, p2=1;
@@ -75,10 +69,10 @@ void processlcp(int n) {
     }
 }
 
-int frameSize[MAX];
-int preprocess(){
-    for(int i=0, pow2=1; pow2 < MAX;  pow2*=2, i++) frameSize[pow2]=i;
-    for(int i=3;i<MAX;i++) {
+int frameSize[1000005];
+int processFrameSize(){
+    for(int i=0, pow2=1; pow2<1000005;  pow2*=2, i++) frameSize[pow2]=i;
+    for(int i=3;i<1000005;i++) {
         if(frameSize[i]==0) {
             frameSize[i]=frameSize[i-1];
         }
@@ -89,18 +83,19 @@ inline int query(int l, int r){
     int p = frameSize[r-l+1];
     return min(lcp[p][l], lcp[p][r-(1<<p)+1]);
 }
+//---------------------
 
 int main() {
-    string s = "bananan";
-    int n = s.size();
-    constructSA(s.c_str(), n);
-    cout << "---" << endl;
-    for (int i = 0; i < n; i++) cout << rankSuf[i] << " "; cout << endl;
+    s = "banana";
+    n = s.size();
+
+    constructSA();
     for (int i = 0; i < n; i++) cout << s.substr(rankSuf[i]) << endl;
 
     cout << getLCP(1, 3) << endl;
 
-    processlcp(n);
-    preprocess();
-    cout << query(0, 0) << endl;
+    processlcp();
+    processFrameSize();
+
+    cout << query(1, 1) << endl;
 }
