@@ -74,6 +74,8 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
        * [Z Algorithm](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/Z_algorithm_max_prefix_match.cpp)
        * [Rolling String Hashing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/string_hashing.cpp)
        * [Rolling String Hashing for Dynamic Strings](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/string_hashing_dynamic_segment_trees.cpp)
+   * *String Data Structures* :
+       * [Suffix Array - Untested](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/untested-codes/suffix_array.cpp)
 * **Sorting** :
   * [Merge Sort](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/merge_sort_count_inversion.cpp)
   * [Quick Select](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/quick_select_order_stat_linear.cpp)
