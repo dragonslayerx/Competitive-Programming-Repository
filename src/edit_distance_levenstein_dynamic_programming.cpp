@@ -4,28 +4,23 @@
  * Source: https://github.com/dragonslayerx
  */
 
-#define MAX 2050
-int edist[2][MAX];
-
-class Edist {
-    public:
-		int solve(string &S1, string &S2){
-			int last = 0, current = 1;
-			for (int i = 0; i <= S1.size(); i++){
-				for (int j = 0; j <= S2.size(); j++){
-					if (i == 0) edist[current][j] = j;
-					else if (j == 0) edist[current][j] = i;
-					else {
-						edist[current][j] = min(edist[last][j] + 1, edist[current][j-1]+1);
-						if (S1[i-1] == S2[j-1]) {
-							edist[current][j] = min(edist[current][j], edist[last][j-1]);
-						} else {
-							edist[current][j] = min(edist[current][j], edist[last][j-1] + 1);
-						}
-					}
-				}
-				swap(last, current);
-			}
-			return edist[last][S2.size()];
-		}
-};
+int d[2][1005];
+int solve(string &s, string &t){
+    int prev = 0, current = 1;
+    for (int i = 0; i <= s.size(); i++){
+        for (int j = 0; j <= t.size(); j++){
+            if (i == 0) d[current][j]=j;
+            else if (j == 0) d[current][j]=i;
+            else {
+                d[current][j] = min(d[prev][j]+1, d[current][j-1]+1);
+                if (s[i-1]==t[j-1]) {
+                    d[current][j] = min(d[current][j], d[prev][j-1]);
+                } else {
+                    d[current][j] = min(d[current][j], d[prev][j-1]+1);
+                }
+            }
+        }
+        swap(prev, current);
+    }
+    return d[prev][t.size()];
+}
