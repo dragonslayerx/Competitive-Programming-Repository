@@ -1,7 +1,16 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+
+const int MOD = 1000000000+7;
+const int INF = 1000000000+5;
+
 /**
  * Description: BIT RURQ (Support range queries and range updates of 1-D array)
  * Usage: query O(lg(N)), update O(lg(N))
  * Source: https://github.com/dragonslayerx
+ * Note: Use 1-based indexing
  */
 
 // Remember to use 1 based indexing
@@ -52,3 +61,28 @@ class BitRPRQ {
         BIT::update(B2, r+1, r*v);
     }
 };
+
+int main() {
+    int t;
+    scanf("%d", &t);
+    while (t--) {
+        int n, q;
+        scanf("%d%d", &n, &q);
+        BitRPRQ B;
+        while (q--) {
+            int choice;
+            scanf("%d", &choice);
+            int p, q;
+            long long v;
+            scanf("%d%d", &p, &q);
+            if (choice==0) {
+                long long v;
+                scanf("%lld", &v);
+                B.Rupdate(p, q, v);
+            } else {
+                long long Answer = B.Rquery(q)-B.Rquery(p-1);
+                printf("%lld\n", Answer);
+            }
+        }
+    }
+}
