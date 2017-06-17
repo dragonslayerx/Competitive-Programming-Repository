@@ -7,7 +7,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
 * **Range Aggregate Queries** :
   * *Binary Indexed Trees (BIT)* :
     * [Point Update Range Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree.cpp)
-    * [Range Update Range Query *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_range_query_range_update.cpp)
+    * [Range Update Range Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_range_query_range_update.cpp)
     * [Order Statistic Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_order_stat.cpp)
     * [2D Binary Indexed Trees](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_2D.cpp)
   * *Segment Trees (SegTree)* :
@@ -112,7 +112,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
       * [Lucas Theorm - Combinatorics](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/lucas_combinatorics.cpp)  
 * **Misc** :
   * [Sum of floor(x) with x=1:n](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/aggreate_sqrt_distinct_values.cpp)
-  * [Sum of cyclic functions](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/aggregate_cyclic_function.cpp)
+  * [Sum of cyclic functions *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/aggregate_cyclic_function.cpp)
   * [Closest larger element before/after every element](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/closest_max_element_before_after_index_using_stack.cpp)
   * [Multiply Long Long Integers](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/multiply_longlong_integers.cpp)
   * [Multiply Long Long Integers - Overflow detection](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/multiply_detect_overflow.cpp)
