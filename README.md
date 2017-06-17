@@ -7,7 +7,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
 * **Range Aggregate Queries** :
   * *Binary Indexed Trees (BIT)* :
     * [Point Update Range Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree.cpp)
-    * [Range Update Range Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_range_query_range_update.cpp)
+    * [Range Update Range Query *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_range_query_range_update.cpp)
     * [Order Statistic Query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_order_stat.cpp)
     * [2D Binary Indexed Trees](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_indexed_tree_2D.cpp)
   * *Segment Trees (SegTree)* :
@@ -31,7 +31,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   * *Standard DP Problems* :
     * [Longest Increasing Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/longest_increasing_subsequence_lis_binary_search.cpp)
     * [Longest Palindromic Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/palindrome_longest_subsequence.cpp)
-    * [Levenstein Distance / Edit Distance](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/edit_distance_levenstein_dynamic_programming.cpp)
+    * [Levenstein Distance / Edit Distance *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/edit_distance_levenstein_dynamic_programming.cpp)
 * **Graphs** :
   * *Single Source Shortest Path Algorithms* :
     * [Dijkstra in dense graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/dijsktra_dense_graphs.cpp)
@@ -60,7 +60,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
         * [Lowest Common Ancestor](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/lowest_common_ancestor_lca.cpp)
         * [Kth Ancestor](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/kth_ancestor_tree.cpp)
     * *Path queries* :
-        * [Sparse Table](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/trees_path_query_sparse_tables.cpp)
+        * [Sparse Table *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/trees_path_query_sparse_tables.cpp)
         * [Heavy Light Decomposition Weighted Nodes](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/heavy_light_decomposition_wieghted_vertices(hld).cpp)
         * [Heavy Light Decomposition Weighted Edges](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/heavy_light_decomposition_weighted_edges%20(hld).cpp)
     * *Misc* :
@@ -75,7 +75,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
        * [Rolling String Hashing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/string_hashing.cpp)
        * [Rolling String Hashing for Dynamic Strings](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/string_hashing_dynamic_segment_trees.cpp)
    * *String Data Structures* :
-       * [Suffix Array - Untested](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/untested-codes/suffix_array.cpp)
+       * [Suffix Array *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/untested-codes/suffix_array.cpp)
 * **Sorting** :
   * [Merge Sort](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/merge_sort_count_inversion.cpp)
   * [Quick Select](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/quick_select_order_stat_linear.cpp)
@@ -87,7 +87,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
    * [Disjoint Set (Supports Undo Operation)](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/disjoint_set_with_undo_operation.cpp)
    * [Max/Min Priority Queue with update](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/heap_using_multiset_max_min_insert_erase_update.cpp)
    * [Binary Trie for xor maximization/minimization](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/binary_trie_max_xor.cpp)
-   * [Bigint](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/bigint_library.cpp)
+   * [Bigint *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/bigint_library.cpp)
    * [Augmented Binary Tree for order statistics and rank query](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/orderstat_rank_query_augmented_bst.cpp)
    * [Monotone Priority Queue](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/monotone_priority_queue.cpp)
    * [Trie](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/trie_insertion_deleteion.cpp)
@@ -104,7 +104,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
       * [Counting Prime Factors](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/prime_factor_count.cpp)
   * *Polynomial Multiplication* :
       * [Fast Fourier Tranform](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/fast_fourier_transform_fft.cpp)
-      * [Karatsuba](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/karatsuba_polynomial_multiplication.cpp)
+      * [Karatsuba *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/karatsuba_polynomial_multiplication.cpp)
   * *Misc* :
       * [Combinatorial and Catalan - Factorial preprocessing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/factorial_preprocessing.cpp)
       * [Mobeius Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/mobeius_function.cpp)
