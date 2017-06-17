@@ -104,7 +104,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
       * [Counting Prime Factors](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/prime_factor_count.cpp)
   * *Polynomial Multiplication* :
       * [Fast Fourier Tranform](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/fast_fourier_transform_fft.cpp)
-      * [Karatsuba *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/karatsuba_polynomial_multiplication.cpp)
+      * [Karatsuba](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/karatsuba_polynomial_multiplication.cpp)
   * *Misc* :
       * [Combinatorial and Catalan - Factorial preprocessing](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/factorial_preprocessing.cpp)
       * [Mobeius Function](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/mobeius_function.cpp)
