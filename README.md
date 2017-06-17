@@ -31,7 +31,7 @@ Collection of algorithms and data structures in C++ used widely in Competitive p
   * *Standard DP Problems* :
     * [Longest Increasing Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/longest_increasing_subsequence_lis_binary_search.cpp)
     * [Longest Palindromic Subsequence](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/palindrome_longest_subsequence.cpp)
-    * [Levenstein Distance / Edit Distance *](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/edit_distance_levenstein_dynamic_programming.cpp)
+    * [Levenstein Distance / Edit Distance](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/edit_distance_levenstein_dynamic_programming.cpp)
 * **Graphs** :
   * *Single Source Shortest Path Algorithms* :
     * [Dijkstra in dense graphs](https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/dijsktra_dense_graphs.cpp)
