@@ -1,7 +1,7 @@
 /**
- * Description: Segment Tree with custom merge function.  
- * Usage: construct O(N), query O(lg(N)), update O(lg(N)) 
- * Source: https://github.com/dragonslayerx 
+ * Description: Segment Tree with custom merge function.
+ * Usage: construct O(N), query O(lg(N)), update O(lg(N))
+ * Source: https://github.com/dragonslayerx
  */
 
 #include <iostream>
@@ -18,20 +18,23 @@ struct node {
         sum = prefix = suffix = 0;
         maxs = INF;
     }
-    node(int a, int b, int c, int d) {
-        assign(a, b, c, d);
+
+    node(int sum, int maxs, int prefix, int suffix) {
+        setNode(sum, maxs, prefix, suffix);
     }
-    void assign(int a, int b, int c, int d)
-    {
-        sum = a, maxs = b, prefix = c, suffix = d;
+
+    void setNode(int sum, int maxs, int prefix, int suffix){
+        this->sum =sum;
+        this->maxs=maxs;
+        this->prefix=prefix;
+        this->suffix=suffix;
     }
 };
 
 int a[MAX];
 node st[4*MAX];
 
-node merge(node left, node right)
-{
+node merge(node left, node right){
     node t;
     t.prefix = max(left.prefix, left.sum+right.prefix);
     t.suffix = max(right.suffix, right.sum+left.suffix);
@@ -42,10 +45,9 @@ node merge(node left, node right)
     return t;
 }
 
-node construct(int n, int ll, int rl)
-{
+node construct(int n, int ll, int rl){
     if (ll == rl) {
-        st[n].assign(a[ll], a[ll], a[ll], a[ll]);
+        st[n].setNode(a[ll], a[ll], a[ll], a[ll]);
     } else {
         node left = construct(2*n+1, ll, (ll+rl)/2);
         node right = construct(2*n+2, (ll+rl)/2+1, rl);
@@ -54,10 +56,9 @@ node construct(int n, int ll, int rl)
     return st[n];
 }
 
-node query(int n, int ll, int rl, int x, int y)
-{
+node query(int n, int ll, int rl, int x, int y){
     int mid = (ll+rl)/2;
-    if (x == ll &&  y == rl) return st[n];
+    if (x==ll &&  y==rl) return st[n];
     else if (y <= mid) return query(2*n+1, ll, mid, x, y);
     else if (x > mid) return query(2*n+2, mid+1, rl, x, y);
     else {
@@ -67,16 +68,15 @@ node query(int n, int ll, int rl, int x, int y)
     }
 }
 
-node update(int n, int ll, int rl, int x, int color)
-{
-    if (x < ll || x > rl) return st[n];
-    if (x == ll &&  x == rl) {
-        st[n].assign(//--Do everything Here--//);
+node update(int n, int ll, int rl, int p, int val){
+    if (p < ll || p > rl) return st[n];
+    if (p == ll &&  p == rl) {
+        st[n].setNode(val, val, val, val);
         return st[n];
     } else {
         int mid = (ll+rl)/2;
-        node left = update(2*n+1, ll, (ll+rl)/2, x, color);
-        node right = update(2*n+2, (ll+rl)/2+1, rl, x, color);
+        node left = update(2*n+1, ll, (ll+rl)/2, p, val);
+        node right = update(2*n+2, (ll+rl)/2+1, rl, p, val);
         st[n] = merge(left, right);
     }
     return st[n];
@@ -86,8 +86,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    for (int i = 0; i < n; i++)
-        scanf("%d", a+i);
+    for (int i = 0; i < n; i++) scanf("%d", a+i);
     construct(0, 0, n-1);
     int q;
     scanf("%d", &q);

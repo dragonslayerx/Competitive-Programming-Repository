@@ -1,7 +1,7 @@
 /**
- * Description: Segment Tree Range query Point update.  
- * Usage: construct O(N), update O(lg(N)), query O(lg(N)) 
- * Source: https://github.com/dragonslayerx 
+ * Description: Segment Tree Range query Point update.
+ * Usage: construct O(N), update O(lg(N)), query O(lg(N))
+ * Source: https://github.com/dragonslayerx
  */
 
 #include <iostream>
@@ -17,8 +17,7 @@ long long a[MAX];
 int st[4*MAX];
 
 int construct (int node, int ll, int rl){
-    if (ll == rl)
-        st[node] = a[ll];
+    if (ll == rl) st[node] = a[ll];
     else {
         int left = construct(2*node+1, ll, (ll+rl)/2);
         int right = construct(2*node+2, (ll+rl)/2 + 1, rl);
@@ -35,8 +34,7 @@ int query(int node, int ll, int rl, int ql, int qr){
     return left + right;
 }
 
-int update(int node, int ll, int rl, int q, int val)
-{
+int update(int node, int ll, int rl, int q, int val){
     if (rl < q || ll > q) return st[node];
     if (q == ll && q == rl) st[node] = val;
     else {
