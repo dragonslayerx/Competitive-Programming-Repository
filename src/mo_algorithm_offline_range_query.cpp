@@ -28,9 +28,7 @@ struct Query {
 };
 
 int S;
-void initS(int n) {
-    S = sqrt(n);
-}
+void initS(int n) { S = sqrt(n); }
 
 bool compare(Query a, Query b) {
     if (a.l/S != b.l/S) {
@@ -40,21 +38,14 @@ bool compare(Query a, Query b) {
     }
 }
 
-//Data-Strcuture
-int cnt = 0;
-int freq[MAX] = {};
+//--Data-Strcuture
+int Answer = 0;
 inline void insert(int v) {
-    if (freq[v] == v) cnt--;
-    freq[v]++;
-    if (freq[v] == v) cnt++;
 }
 
 inline void erase(int v) {
-    if (freq[v] == v) cnt--;
-    freq[v]--;
-    if (freq[v] == v) cnt++;
 }
-//
+//-------------
 
 int answer[MAX];
 
@@ -67,7 +58,6 @@ int main() {
         cin >> a[i];
         if (a[i] > n) a[i] = n+1;
     }
-
     vector<Query> query;
     for (int i = 0; i < q; i++) {
         int l, r;
@@ -75,15 +65,11 @@ int main() {
         l--, r--;
         query.push_back(Query(l, r, i));
     }
-
     sort(query.begin(), query.end(), compare);
-
-    int left = 0;
-    int right = -1;
+    int left = 0, right = -1;
     for (int i = 0; i < query.size(); i++) {
         int l = query[i].l;
         int r = query[i].r;
-
         if (right < r) {
             while (right < r) {
                 right++;
@@ -95,7 +81,6 @@ int main() {
                 right--;
             }
         }
-
         if (left < l) {
             while (left < l) {
                 erase(a[left]);
@@ -107,7 +92,7 @@ int main() {
                 insert(a[left]);
             }
         }
-        answer[query[i].idx] = cnt;
+        answer[query[i].idx] = Answer;
     }
 
     for (int i = 0; i < q; i++) {
