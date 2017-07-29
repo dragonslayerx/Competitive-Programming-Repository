@@ -24,3 +24,30 @@ void update(int indx, int x){
         indx += (indx & -indx);
     }
 }
+
+int main() {
+    int n;
+    cin >> n;
+    vector<long long> a(n);
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        update(i, a[i]);
+    }
+    int q;
+    cin >> q;
+    while (q--) {
+        int choice;
+        cin >> choice;
+        if (choice) {
+            int l, r;
+            cin >> l >> r;
+            cout << query(r) - query(l-1) << endl;
+        } else {
+            int p; 
+            long long x;
+            cin >> p >> x; 
+            update(p, x);
+        }
+    }
+}
+        
