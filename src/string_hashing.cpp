@@ -19,8 +19,7 @@ class StringHash {
     ll m = 1000000007;
 
     ll B[MAX], inverseB[MAX];
-
-public:
+    
     void initialize() {
         B[0]=1;
         for (int i = 1; i < MAX; i++) {
@@ -30,6 +29,11 @@ public:
         for (int i = MAX-2; i >= 0; i--) {
             inverseB[i]=(inverseB[i+1]*b)%m;
         }
+    }
+ 
+public:
+    StringHash() {
+        initialize();
     }
 
     ll getHash(char *s) {
