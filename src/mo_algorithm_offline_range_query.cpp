@@ -72,24 +72,20 @@ int main() {
         int r = query[i].r;
         if (right < r) {
             while (right < r) {
-                right++;
-                insert(a[right]);
+                right++; insert(a[right]);
             }
         } else {
             while (right > r) {
-                erase(a[right]);
-                right--;
+                erase(a[right]); right--;
             }
         }
         if (left < l) {
             while (left < l) {
-                erase(a[left]);
-                left++;
+                erase(a[left]); left++;
             }
         } else {
             while (left > l) {
-                left--;
-                insert(a[left]);
+                left--; insert(a[left]);
             }
         }
         answer[query[i].idx] = Answer;
