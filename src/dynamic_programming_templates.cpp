@@ -12,9 +12,7 @@ long long solve(){
 	}
 	if(!exist[][]){
 		long long answer = 0;
-		//----type your code here----
 		
-		//---------------------------
 		dp[][] = answer;
 		exist[][] = true;
 	}
@@ -25,8 +23,7 @@ long long solve(){
  * Description: Digit DP
  */
 
-template<typename T> string toString(T value)
-{
+template<typename T> string toString(T value){
 	string s;
 	while (value) {
 		s.push_back(value % 10 + '0');
@@ -40,8 +37,7 @@ template<typename T> string toString(T value)
 bool exist[][][];
 long long dp[][][];
 
-long long solve(const string &s, int digit, bool bound, )
-{
+long long solve(const string &s, int digit, bool bound, ){
 	if (digit == s.size()) {
 		return;
 	}
@@ -60,8 +56,8 @@ long long solve(const string &s, int digit, bool bound, )
 
 /**
  * Description: Binary exponentiation DP (Non standard)
- * Note: 	Most of the same target problems can be solved through matrix exponentiation. 
- * 	It helped me once doing a Div2-E (http://codeforces.com/problemset/problem/621/E) 
+ * Note: Most of the same target problems can be solved through matrix exponentiation. 
+ * It helped me once doing a Div2-E (http://codeforces.com/problemset/problem/621/E) 
  */
 
     long long dp[105][105] = {};
@@ -105,7 +101,7 @@ long long solve(const string &s, int digit, bool bound, )
 
 /**
  * Description: Bitwise combinatorial DP
- * Note: 	Target problems include no of pairs (x, y) 
+ * Note: Target problems include no of pairs (x, y) 
 	such that x <= A, y <= B, (x op y)  <= C, where op is a bitwise operator. 
  */
 
