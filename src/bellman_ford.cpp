@@ -13,6 +13,7 @@
  const int INF = 1e9+5;
 
 struct edges {
+	int a;
     int u;
     int v;
     long long w;
