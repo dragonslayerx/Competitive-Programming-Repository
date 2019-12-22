@@ -1,4 +1,4 @@
-/**
+/*
  * Description: BigInt (Big Integer library)
  * Usage:  See constructors, operators like +, -, *, /, >, >=, <, <=, ==, toString
  * Note: Remove references '&' in overloaded operators for chaining operations.
@@ -49,7 +49,7 @@ class Bigint {
 
         //Put everything back to original state
         for (int i = 0; i < maxLen; i++) Y[i]=('9'-Y[i])+'0';
-		X[lenX]='\0'; Y[lenY]='\0';
+        X[lenX]='\0'; Y[lenY]='\0';
 
         return len;
     }
@@ -83,20 +83,20 @@ class Bigint {
     }
 
     template<class T>
-    int divideNmodulo(char *X, int lenX, T divisor, char *Z, T &modulo) {
-        int remainder = 0;
-   		int size = 0;
-   		for(int i = lenX-1; i >= 0; i--){
-    		remainder *= 10;
-      		remainder += X[i]- '0';
-      		Z[size++] = remainder/divisor + '0';
-      		remainder %= divisor;
-    	}
-    	Z[size]='\0';
-    	reverse(Z, Z+size);
-    	modulo = remainder;
-    	return size;
-    }
+        int divideNmodulo(char *X, int lenX, T divisor, char *Z, T &modulo) {
+            int remainder = 0;
+            int size = 0;
+            for(int i = lenX-1; i >= 0; i--){
+                remainder *= 10;
+                remainder += X[i]- '0';
+                Z[size++] = remainder/divisor + '0';
+                remainder %= divisor;
+            }
+            Z[size]='\0';
+            reverse(Z, Z+size);
+            modulo = remainder;
+            return size;
+        }
 
     //Logical Operations
     bool equals(char *X, int lenX, char *Y, int lenY) {
@@ -212,7 +212,10 @@ public:
     string toString() {
         string s(x, x+length);
         reverse(s.begin(), s.end());
-        return trimZeros(s);
+        s = trimZeros(s);
+        if(s.length() == 0)
+            return "0";
+        return s;
     }
 
     friend std::ostream& operator<<(ostream &o, Bigint v) {
@@ -225,10 +228,13 @@ int main() {
     Bigint A("123456789"); // Construct Bigint using string representation
     Bigint B(987654321); // Construct Bigint using integer representation
     Bigint C("456789");
-    cout << A * B << endl; // Overridden ostream
-    cout << A * B + C << endl; // Chaining operations
-    cout << (A > B) << endl;
+    Bigint D("0");
+    cout << "A * B: " << A * B << endl; // Overridden ostream
+    cout << "A * B + C: " << A * B + C << endl; // Chaining operations
+    cout << "(A > B): " << (A > B) << endl;
+    cout << "D: " << D << endl;
     // logical operations
     if (A > B) cout << "A is greater than B" << endl;
-    else cout << "B is greater than A" << endl;
+    if (B > A) cout << "B is greater than A" << endl;
+    if (A == B) cout << "A is equal to B" << endl;
 }
