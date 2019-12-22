@@ -98,7 +98,7 @@ class Bigint {
             return size;
         }
 
-    //Logical Operations
+    // Relational Operations
     bool equals(char *X, int lenX, char *Y, int lenY) {
         int maxLen = max(lenX, lenY);
         align(X, maxLen); align(Y, maxLen);
@@ -115,8 +115,9 @@ class Bigint {
     bool greater(char *X, int lenX, char *Y, int lenY) {
         int maxLen = max(lenX, lenY);
         align(X, maxLen); align(Y, maxLen);
-        for (int i = maxLen; i >= 0; i--) {
+        for (int i = maxLen - 1; i >= 0; i--) {
             if (X[i] > Y[i]) return true;
+            if (X[i] < Y[i]) return false;
         }
 
         //Put everything back to original state
@@ -181,13 +182,13 @@ public:
         return modulo;
     }
 
-    //Logical Operators
+    // Relational Operators
     bool operator ==(Bigint &b) {
         return equals(this->x, this->length, b.x, b.length);
     }
 
     bool operator >(Bigint &b) {
-        return !greater(b.x, b.length, this->x, this->length);
+        return greater(this->x, this->length, b.x, b.length);
     }
 
     bool operator >=(Bigint &b) {
